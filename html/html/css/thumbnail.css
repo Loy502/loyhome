@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+/* 데스크탑CSS----------------------------------------------------------------------------------------------------
+	1440-1281px (브라우저)
+	배너 공간 (1440px)
+	리스트 1줄 = 4개
+	*/
+.content_wide{
+	width: 1440px;
+	margin: auto;
+}
+.space1{
+	height: 70px;
+}
+.thumbnail_wrap{
+	width: 1024px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	margin: auto;
+}
+.thumbnail_wrap img{
+	width: 100%;
+	max-width: 550px;
+	min-width: 240px;
+	padding: 0 20px;
+	display: block;
+}
+.work{
+	width: 394px;
+	padding: 0 20px;
+	letter-spacing :0.5px;
+}
+.title{
+	font-size: 1rem; /*16px*/
+	line-height: 1.2;
+	-webkit-text-stroke-width: 0.7px; /* 텍스트 외곽선 */
+    -webkit-text-stroke-color: #262626;
+}
+.text_color{
+	color: rosybrown;
+	-webkit-text-stroke-color: rosybrown;
+}
+hr{
+	border: none;
+	height: 0.5px;
+	color: rgb(185, 185, 185); /* IE */
+	border-color: rgb(185, 185, 185) ; /* 사파리 */
+	background: rgb(185, 185, 185); /* 크롬, 모질라 등, 기타 브라우저 */
+}
+.line1{
+	width: 1080px;
+}
+.work li:nth-child(3){
+	margin-top: 20px;
+	margin-bottom: 10px;
+	-webkit-text-stroke-width: 0.5px; /* 텍스트 외곽선 */
+    -webkit-text-stroke-color: #262626;
+}
+.history{
+	font-size: 0.875rem; /*14px*/
+	line-height: 1.3;
+}
+pre{
+	white-space: pre-wrap;
+	text-transform: none; /*대문자 소문자화*/	
+}
+.history a{ 
+	display: inline-block;
+	width: 220px;
+	white-space: nowrap;
+	overflow:hidden;
+    text-overflow:ellipsis;/*링크 말줄임표 화*/
+	line-height: 0.9;
+	margin-bottom: -1px;
+}
+.history a:link{
+	color:blueviolet;	
+}
+.history a:visited { 
+	color:blueviolet; 
+}
+
+
+/* 데스크탑/노트북CSS----------------------------------------------------------------------------------------------------
+	1280-1025px (브라우저)
+	배너 공간 (1280px)
+	*/
+	
+@media all and (max-width: 1280px){
+	.content_wide{
+		width: 1280px;
+	}
+}
+
+
+/* 태블릿CSS----------------------------------------------------------------------------------------------------
+	1024-768px (반응형)
+	메인 배너 / 서브 배너 분리
+	*/
+
+@media all and (max-width: 1024px){
+	.space1{
+		height: 50px;
+	}
+	.content_wide{
+		width: 100%;
+		max-width: 1024px;
+		min-width: 280px;
+	}
+	.thumbnail_wrap{
+		width: 100%;
+		max-width: 1024px;
+		min-width: 280px;
+	}
+	.thumbnail_wrap img{
+		width: 100%;
+		max-width: 550px;
+	}
+	hr{
+		width: 100%;
+	}
+	.work{
+		width: 100%;
+		padding: 0 20px;
+	}
+	.line{
+		width: 100%;
+	}
+	.title{
+		font-size: 0.875rem; /*14px*/
+	} 
+	.history{
+		font-size: 0.813rem; /*13px*/
+	}
+}
+
+
+/* 태블릿/모바일_가로CSS----------------------------------------------------------------------------------------------------
+	767-481px (반응형)
+	리스트 1줄 = 3개
+	*/
+
+@media all and (max-width: 767px){
+	.space1{
+		height: 40px;
+	}
+	.thumbnail_wrap{
+		flex-wrap: wrap;
+	}
+	.thumbnail_wrap img{
+		width: 100%;
+		max-width: 727px;
+		min-width: 240px;
+		margin: 10px;
+		padding: 0;
+	}
+	.work{
+		width: 100%;
+		margin: 10px;
+		padding: 0px;
+	}
+}
+
+
+/* 모바일CSS----------------------------------------------------------------------------------------------------
+	480-281px (반응형)
+	리스트 2개 씩
+	*/
+
+@media all and (max-width: 480px){
+	.space1{
+		height: 35px;
+	}
+	.thumbnail_wrap img{
+		margin: 10px;
+	}
+	.work{
+		margin: 10px;
+	}
+	.title{
+		font-size: 0.813rem; /*13px*/
+		margin-bottom: 10px;
+	}
+	.work li:nth-child(3){
+		margin-top: 10px;
+		margin-bottom: 7px;
+	}
+	.history{
+		font-size: 0.75rem; /*12px*/
+		line-height: 1.2;
+	}
+	.space1{
+		height: 30px;
+	}
+}
+
+
+/* 모바일CSS----------------------------------------------------------------------------------------------------
+	280px (min-withd 280px 고정)
+	*/
+	
+@media all and (max-width: 280px){
+	.space1{
+		height: 30px;
+	}
+	.thumbnail_wrap img{
+		padding: 0px;
+	}
+	.work{
+		padding: 0px;
+	}
+	hr{
+		margin: 10px auto;
+	}
+	.title, .history{
+		font-size: 0.75rem; /*12px*/
+	}
+	.space1{
+		height: 20px;
+	}
+}

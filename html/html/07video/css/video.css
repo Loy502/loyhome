@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* 데스크탑CSS----------------------------------------------------------------------------------------------------
+	1440-1281px (브라우저)
+	*/
+.content_wide{
+	width: 1440px;
+	margin: auto;
+}
+.space1{
+	height: 70px;
+}
+.video{
+	width: 1024px;
+	margin: auto;
+}
+embed, iframe{
+width:100%;
+max-width:100%;
+}
+    
+.video_wrap{
+position:relative;
+padding-bottom:56.25%;
+/* 9 ÷ 16 */
+height:0;
+overflow:hidden;
+}
+    
+iframe{
+position:absolute;
+top:0;
+left:0;
+height:100%;
+}
+
+
+/* 데스크탑/노트북CSS----------------------------------------------------------------------------------------------------
+	*/
+@media all and (max-width: 1280px){
+	.content_wide{
+		width: 1280px;
+	}
+}
+
+   
+/* 태블릿CSS----------------------------------------------------------------------------------------------------
+	1024-768px (반응형)
+	*/
+@media all and (max-width: 1024px){
+	.space1{
+		height: 60px;
+	}
+	.content_wide{
+		width: 100%;
+		max-width: 1024px;
+		min-width: 280px;
+	}
+	.video{
+		width: 100%;
+		min-width: 280px;
+	}
+}    
+
+
+/* 태블릿/모바일_가로CSS----------------------------------------------------------------------------------------------------
+	767-481px (반응형)
+	*/
+	@media all and (max-width: 767px){
+		.space1{
+			height: 50px;
+		}
+	}
+
+
+/* 모바일CSS----------------------------------------------------------------------------------------------------
+	480-281px (반응형)
+	*/
+	@media all and (max-width: 480px){
+		.space1{
+			height: 40px;
+		}
+	}
+
+
+/* 모바일CSS----------------------------------------------------------------------------------------------------
+	280px (min-withd 280px 고정)
+	*/
+	@media all and (max-width: 280px){
+		.space1{
+			height: 30px;
+		}
+		.content_wide{
+			width: 280px;
+		}
+	}
