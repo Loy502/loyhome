@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+/* 데스크탑CSS----------------------------------------------------------------------------------------------------
+	1440-1281px (브라우저)
+	배너 공간 (1440px)
+	리스트 1줄 = 4개
+	*/
+#retouching_title_wrap{
+	height: 0px;
+}
+.line1{
+	width: 1200px;
+}
+.page{
+    text-align: center;
+	position: relative;
+}
+.original_click, .retouching_click,
+.original_click1, .retouching_click1,
+.original_click2, .retouching_click2{
+	position: relative;
+}
+.click{
+	margin-bottom: 50px;
+}
+.click .original_click,
+.click .original_click1,
+.click .original_click2 {
+	display: none;
+}
+.resize{
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+	cursor: pointer;
+}
+.space{
+    height: 250px;
+}
+
+
+/* 데스크탑/노트북CSS----------------------------------------------------------------------------------------------------
+	1280-1025px (브라우저)
+	배너 공간 (1280px)
+	*/
+	
+@media all and (max-width: 1280px){
+}
+
+
+/* 태블릿CSS----------------------------------------------------------------------------------------------------
+	1024-768px (반응형)
+	메인 배너 / 서브 배너 분리
+	*/
+
+@media all and (max-width: 1024px){
+	.line1{
+		width: 100%;
+	}
+	.page img{
+		width: auto;
+		max-width: 100%;
+		height: auto;
+		max-height: 100%;
+	}
+	.click{
+		margin-bottom: 40px;
+	}
+	.space{
+		height: 200px;
+	}
+}
+
+
+/* 태블릿/모바일_가로CSS----------------------------------------------------------------------------------------------------
+	767-481px (반응형)
+	리스트 1줄 = 3개
+	*/
+
+@media all and (max-width: 767px){
+	.click{
+		margin-bottom: 30px;
+	}
+	.space{
+		height: 150px;
+	}
+}
+
+
+/* 모바일CSS----------------------------------------------------------------------------------------------------
+	480-281px (반응형)
+	리스트 2개 씩
+	*/
+
+@media all and (max-width: 480px){
+	.space{
+		height: 100px;
+	}
+}
+
+
+/* 모바일CSS----------------------------------------------------------------------------------------------------
+	280px (min-withd 280px 고정)
+	*/
+	
+@media all and (max-width: 280px){
+	.click{
+		margin-bottom: 20px;
+	}
+	.space{
+		height: 70px;
+	}
+}
