@@ -1,0 +1,159 @@
+@charset utf-8;
+
+#popup_bg{
+    background-color: rgba(0,0,0,0.6);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 999999;
+    display: none;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    min-width: 280px;
+}
+.popup_wrap{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px 20px;
+    min-width: 260px;
+
+    transform: All 0.9s ease;
+    -webkit-transition: All 0.9s ease;
+    -moz-transform: All 0.9s ease;
+    -o-transition: All 0.9s ease;
+}
+#popup img{
+    display: block;
+    border-radius: 30px;
+    box-sizing: border-box;
+    min-width: 280px;
+}
+.close, .today_close{
+    position: absolute;
+    cursor: pointer;
+}
+.close{
+    top: 7px;
+    right: 7px;
+}
+.x{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: none;
+    background-color: #262626;
+    color: #fff;
+    font-size: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.today_close{
+    bottom: 13px;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 0.875rem; /*14px*/
+    font-weight: 700;
+}
+.close_x{
+    font-size: 1rem;
+    width: 26px;
+    height: 26px;
+    background-color: #9a9898;
+}
+
+
+/* 데스크탑/노트북CSS----------------------------------------------------------------------------------------------------
+	1280-1025px (브라우저)
+	*/
+@media all and (max-width: 1280px){
+}
+
+
+/* 태블릿CSS----------------------------------------------------------------------------------------------------
+	1024-768px (반응형)
+	*/
+@media all and (max-width: 1024px){
+    .popup_wrap{
+        border-radius: 25px;
+    }
+}
+
+
+/* 태블릿/모바일_가로CSS----------------------------------------------------------------------------------------------------
+	767-481px (반응형)
+	*/
+@media all and (max-width: 767px){
+    .popup_wrap{
+        border-radius: 20px;
+    }
+    .x{
+        width: 34px;
+        height: 34px;
+        font-size: 1.5rem; /* 24px */
+    }
+    .today_close{
+        bottom: 1.2%;
+        font-size: 0.75rem; /*12px*/
+    }
+    .close_x{
+        font-size: 0.875rem; /* 14px */
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+/* 모바일CSS----------------------------------------------------------------------------------------------------
+	480-281px (반응형)
+	*/
+
+@media all and (max-width: 480px){
+    .popup_wrap{
+        border-radius: 15px;
+    }
+    .x{
+        width: 28px;
+        height: 28px;
+        font-size: 1rem; /* 16px */
+    }
+    .today_close{
+        bottom: 1%;
+    }
+    .close_x{
+        font-size: 0.75rem; /*12px*/
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+/* 모바일CSS----------------------------------------------------------------------------------------------------
+	280px (min-withd 280px 고정)
+	*/
+	
+@media all and (max-width: 280px){
+    .close{
+        top: 7px;
+        right: 7px;
+    }
+    .x{
+        width: 26px;
+        height: 26px;
+        font-size: 0.75rem; /*12px*/
+    }
+    .today_close{
+        bottom: 2px;
+    }
+    .close_x{
+        width: 18px;
+        height: 18px;
+    }
+}

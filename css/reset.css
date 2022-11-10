@@ -1,0 +1,78 @@
+@charset utf-8;
+
+/* 웹폰트 불러오기 CSS */
+@font-face {
+font-family: 'Noto Sans KR', sans-serif;
+src: url('https: //fonts.googleapis.com/css2? family= Noto+Sans+KR:wght@100;300;400;500;700;900 & display=swap') format('swap');
+font-weight: 100,300,400,500,700,900;
+font-style: normal;
+}
+/* 폰트 패밀리: 'Noto Sans KR', sans-serif; */
+
+@font-face { /* 임폴트로 호출 안됨 */
+font-family: 'GmarketSansLight';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'GmarketSansBold';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+/* 폰트 패밀리 'GmarketSansLight', 'GmarketSansMedium', 'GmarketSansBold'; ___300/500/700*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{
+margin: 0;
+padding: 0;
+border: 0;
+list-style: none; /*리스트 속성 초기화*/
+font: inherit; /*속성 상속*/
+color: #262626; /*폰트 기본 컬러*/
+vertical-align: baseline; /*인라인 요소 상대적 수직 정렬 : 텍스트 기준선 or 마진 끝을 기준으로 맞춤 */
+background:transparent;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+display: block; /*요소 크기 결정 : div가 갖는 기본값, width100%(가로 한 줄 차지)*/
+}
+
+body{
+font-size: 1em;
+line-height: 1; /*기본 요소 간격*/
+font-family: "Roboto",'Noto Sans KR', sans-serif; /*기본 폰트*/
+font-weight: 300;
+flex-direction: column;
+word-break: keep-all; /*단어 단위 줄바꿈*/
+}
+
+a{
+text-decoration: none; /*링크 밑줄 제거*/
+}
+
+blockquote, q{ 
+quotes: none; /*인용문 속성*/
+}
+
+blockquote:before, blockquote:after, /*인용문 속성*/
+q:before, q:after {
+content: none; /*속성 리셋*/
+}
+
+table{ /*테두리 속성*/
+border-collapse: collapse; /*테두리 사이의 간격 없앰_겹치는 부분은 한 줄로 나타냄*/
+border-spacing: 0;
+}

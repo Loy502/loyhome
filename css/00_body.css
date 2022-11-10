@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+body{
+	font-size: 0.75rem;
+	text-transform: uppercase; /*대문자*/
+	/* white-space: nowrap;  줄바뀜 금지 */
+	overflow: overlay; /*스크롤바 배경 없애기*/
+}

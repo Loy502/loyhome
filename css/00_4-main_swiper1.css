@@ -1,0 +1,201 @@
+@charset "utf-8";
+/* 데스크탑CSS----------------------------------------------------------------------------------------------------
+	1440-1281px (브라우저)
+	배너 공간 (1440px)
+	리스트 1줄 = 4개
+	*/
+
+/*02 메인 섹션--------------------------------------------------*/
+.content_wide{
+    width: 100%;
+    max-width: 1440px;
+    min-width: 280px;
+    display: block;
+    margin: auto;
+}
+.main_all{    
+    width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+/*메인 스와이프------------------------------*/
+.swiper {
+    width: 100%;
+    user-select: none;  /* slide drag를 위해 DOM요소가 드래그로 선택되는것을 방지 */
+  }
+.swiper-slide img{
+	width: 960px;
+}
+.swiper-pagination-bullet{
+    width: 1.6019223067681216vw; /*40px*/
+    height: 3px;
+    border-radius: 0px;
+    background: #fff;
+    opacity: 50%;
+}
+.swiper-pagination-bullet-active { 
+    width: 6.22568093385214vw; /*80px*/
+    transition: width .5s; 
+    border-radius: 3px; 
+    opacity: 100%;
+}
+.swiper-button-next .swiper-button-disabled,
+.swiper-button-prey .swiper-button-disabled{
+    opacity: 0;
+}
+.swiper-button-next,
+.swiper-button-prev{
+    color: white;
+    width: 6.25rem; /*100px;*/
+    height: 6.25rem; /*100px;*/
+    transform: translateY(-50%);
+    margin-top: calc(0px - (var(--swiper-navication-size)/ 0));
+	background-size: 100%;
+	background-repeat: no-repeat; /* 배경 이미지 반복X */
+    filter: drop-shadow(0px 0px 2px #838383); /*이미지 그림자*/
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-prev:after{
+    display: none;
+}
+.swiper-button-prev{
+    background-image: url(../img/main/icon/left_arrow.png);
+    left: 0;
+}
+.swiper-button-next{
+    background-image: url(../img/main/icon/right_arrow.png);
+    right: 0;
+}
+
+
+/* 데스크탑/노트북CSS----------------------------------------------------------------------------------------------------
+	1280-1025px (브라우저)
+	배너 공간 (1280px)
+	*/
+@media all and (max-width: 1280px){
+
+/*02 메인 섹션--------------------------------------------------*/
+.main_all{    
+    width: 1280px;
+}
+/*메인 스와이프------------------------------*/
+.swiper-slide img{
+	width: 853px;
+}
+.swiper-button-next,
+.swiper-button-prev{
+	width: 5.438rem; /*87px*/
+	height: 5.438rem; /*87px*/
+}
+/*서브 배너------------------------------*/
+}
+
+
+/* 태블릿CSS----------------------------------------------------------------------------------------------------
+	1024-768px (반응형)
+	메인 배너 / 서브 배너 분리
+	*/
+@media all and (max-width: 1024px){
+
+/*02 메인 섹션--------------------------------------------------*/
+.main_all{    
+    flex-wrap: wrap;
+    width: 100%;
+}
+/*메인 스와이프------------------------------*/
+.swiper{
+    width: 100vw;
+}
+.swiper-slide img{
+    width: 100vw;
+}
+.swiper-pagination-bullet{
+    width: 3.8910505836575875vw; /*50px*/
+}
+.swiper-pagination-bullet-active { 
+    width: 12.014417300760913vw; /*300px*/
+}
+.swiper-button-next,
+.swiper-button-prev{
+	width: 6.563rem; /* 105px */
+	height: 6.563rem; /* 105px */
+}
+/*서브 배너------------------------------*/
+}
+
+
+/* 태블릿/모바일_가로CSS----------------------------------------------------------------------------------------------------
+	767-481px (반응형)
+	메뉴바 1줄 = 3개
+	리스트 1줄 = 3개
+	*/
+@media all and (max-width: 767px){
+
+/*02 메인 섹션--------------------------------------------------*/
+/*메인 스와이프------------------------------*/
+.swiper-button-next,
+.swiper-button-prev{
+	width: 4.938rem; /* 79px */
+	height: 4.938rem; /* 79px */
+}
+/*서브 배너------------------------------*/
+}
+
+
+/* 모바일CSS----------------------------------------------------------------------------------------------------
+	480-281px (반응형)
+	리스트 1줄 = 2개
+	*/
+@media all and (max-width: 480px){
+
+/*02 메인 섹션--------------------------------------------------*/
+/*메인 스와이프------------------------------*/
+.swiper-pagination-bullet{
+    width: 0.438rem; /*7px*/
+    border-radius: 3px;
+}
+.swiper-pagination-bullet-active { 
+    width: 7.003891050583658vw; /*90px*/
+}
+.swiper-button-next,
+.swiper-button-prev{
+	width: 3.063rem; /* 49px */
+	height: 3.063rem; /* 49px */
+}
+/*서브 배너------------------------------*/
+}
+
+
+/* 모바일CSS----------------------------------------------------------------------------------------------------
+	280px (min-withd 280px 고정)
+	리스트 1줄 = 1개
+	*/
+@media all and (max-width: 280px){
+
+/*02 메인 섹션--------------------------------------------------*/
+.main_all{    
+    width: 280px;
+}
+/*메인 스와이프------------------------------*/
+.swiper {
+    width: 280%;
+  }
+.swiper-slide img{
+	width: 280px;
+}
+.swiper-pagination-bullet{
+    width: 0.313rem; /*5px*/
+}
+.swiper-pagination-bullet-active { 
+    width: 7.003891050583658vw; /*90px*/
+}
+.swiper-button-next,
+.swiper-button-prev{
+	width: 1.813rem; /*29px;*/
+	height: 1.813rem; /*29px;*/
+}
+/*서브 배너------------------------------*/
+}

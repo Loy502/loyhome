@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/*스크롤바 커스텀*/
+body::-webkit-scrollbar{ /*스크롤바 전체*/
+	width: 6px; /*가로 스크롤바 너비*/
+	height: 6px; /*세로 스크롤바 높이*/
+}
+body::-webkit-scrollbar-thumb /*스크롤바 핸들*/ { 
+	background-color: hsla(0, 0%, 14%, 0.50);
+    border-radius: 50px;
+}
+body::-webkit-scrollbar-track /*스크롤바 막대*/
+body::-webkit-scrollbar-corner, /*스크롤바 하단 모서리*/
+body::-webkit-scrollbar-button, /*스크롤 위 아래 화살표*/
+body::-webkit-scrollbar-track-piece, /*핸들로 덮이지 않는 부분*/
+body::-webkit-resizer{ /*일부 요소의 하단 모서리에 표시되는 조정 핸들*/
+	display: none;
+}
+
+
+
+/* 모바일CSS----------------------------------------------------------------------------------------------------
+	480-281px (반응형)
+	*/
+@media all and (max-width: 480px){
+body::-webkit-scrollbar{ /*스크롤바 전체*/
+	width: 4px; /*가로 스크롤바 너비*/
+	height: 4px; /*세로 스크롤바 높이*/
+}
+}
+
+
+/* 모바일CSS----------------------------------------------------------------------------------------------------
+	280px (min-withd 280px 고정)
+	*/
+@media all and (max-width: 280px){
+/*스크롤바 커스텀*/
+body::-webkit-scrollbar{ /*스크롤바 전체*/
+	width: 3px; /*가로 스크롤바 너비*/
+	height: 3px; /*세로 스크롤바 높이*/
+}
+}
