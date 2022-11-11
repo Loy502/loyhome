@@ -71,9 +71,8 @@
     -moz-text-stroke-color: #fff;
     -o-text-stroke-color: #fff;
 
-    -webkit-text-shadow: 0.1px 0.1px 5px/*블러*//* -2px그림자 크기 줄이기*/ rgb(39, 39, 39);
-    -moz-text-shadow: 0.1px 0.1px 5px/*블러*//* -2px그림자 크기 줄이기*/ rgb(39, 39, 39);
-    -o-text-shadow: 0.1px 0.1px 5px/*블러*//* -2px그림자 크기 줄이기*/ rgb(39, 39, 39);
+    text-shadow: 0.1px 0.1px 5px/*블러*//* -2px그림자 크기 줄이기*/ rgb(39, 39, 39);
+    filter:shadow(color=rgb(39, 39, 39), direction=135, strength=4); zoom:1;
 }
 
 
