@@ -60,16 +60,17 @@
 }
 .sub_button a{
     color: #fff;
+
     -webkit-text-stroke-width: 0.2px;
     -moz-text-stroke-width: 0.2px;
     -o-text-stroke-width: 0.2px;
-
+    
     -webkit-text-stroke-color: #fff;
     -moz-text-stroke-color: #fff;
     -o-text-stroke-color: #fff;
 
-    text-shadow: 0.1px 0.1px 2px/*블러*//* -2px그림자 크기 줄이기*/ rgb(39, 39, 39);
-    filter:shadow(color=rgb(39, 39, 39), direction=135, strength=2); zoom:1; /* 익스플로러 그림자 */
+    /* text-shadow: 0.1px 0.1px 2px/*블러*//* -2px그림자 크기 줄이기*/ /* rgb(39, 39, 39); */
+    /* filter:shadow(color=rgb(39, 39, 39), direction=135, strength=2); zoom:1; /* 익스플로러 그림자 */
 }
 
 
