@@ -46,6 +46,9 @@
     right: 50%;
     transform: translate(50%, 0);
     backdrop-filter: blur(10px); /*백 블러 처리*/
+	    -webkit-backdrop-filter: blur(10px);
+	-moz-backdrop-filter: blur(10px);
+	-o-backdrop-filter: blur(10px);
 }
 .sub_button button{
     font-family: 'GmarketSansLight';
