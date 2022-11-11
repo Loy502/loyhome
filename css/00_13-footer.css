@@ -2,6 +2,7 @@
 /*07 푸터 섹션--------------------------------------------------*/
 .footer{
     height: 100px;
+	min-width: 280px;
     letter-spacing: 0.5px;      /* 자간 */
     border-top: 1px solid rgb(230, 230, 230);
     display: flex;
