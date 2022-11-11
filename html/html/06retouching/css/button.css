@@ -16,11 +16,14 @@ button{
     text-shadow: 0px 0px 5px/*블러*/ /*-2px그림자 크기 줄이기*/ rgb(81, 81, 81);
     box-shadow: 0px 0px 10px/*블러*/ /*-2px그림자 크기 줄이기*/ rgb(175, 175, 175);
     background: transparent;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    -moz-backdrop-filter: blur(3px);
+    -o-backdrop-filter: blur(3px);
     position: absolute;
     right: 50%;
     bottom: 3%;
     transform: translate(50%, 0);
-    backdrop-filter: blur(3px); /*백 블러 처리*/
     cursor: pointer;
 }
 
