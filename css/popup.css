@@ -21,8 +21,8 @@
     border-radius: 30px;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 50px 50px;
-    min-width: 130px;
+    margin: 20px 20px;
+    min-width: 240px;
 
     transform: All 0.9s ease;
     -webkit-transition: All 0.9s ease;
@@ -33,7 +33,6 @@
     display: block;
     border-radius: 30px;
     box-sizing: border-box;
-    min-height: 250px;
 }
 .close, .today_close{
     position: absolute;
@@ -118,6 +117,8 @@
 @media all and (max-width: 480px){
     .popup_wrap{
         border-radius: 15px;
+        min-width: 150px;
+        margin: 115px 115px;
     }
     .x{
         width: 28px;
