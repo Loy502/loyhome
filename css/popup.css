@@ -117,8 +117,6 @@
 @media all and (max-width: 480px){
     .popup_wrap{
         border-radius: 15px;
-        min-width: 150px;
-        margin: 115px 115px;
     }
     .x{
         width: 28px;
