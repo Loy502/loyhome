@@ -33,7 +33,7 @@
     display: block;
     border-radius: 30px;
     box-sizing: border-box;
-    min-width: 280px;
+    min-height: 250px;
 }
 .close, .today_close{
     position: absolute;
