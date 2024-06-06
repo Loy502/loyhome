@@ -1,0 +1,17 @@
+    /* down0_5s - 링크: https://devinus.tistory.com/58 */
+    .fade-wrap .down0_5s {
+        /* 나타나는 효과가 N초 동안 발생 */
+        transition: 0.5s;
+        /* 투명도 0 (안보임) */
+        opacity: 0;
+        /* 아래에서 위로 나타나게 하기 위함 */
+        position: relative;
+        top: -30px;
+    }
+
+    .fade-wrap .down0_5s.fade-in {
+        /* 투명도 0 (보임) */
+        opacity: 1;
+        /* 아래에서 위로 나타나게 하기 위함 */
+        top: 0;
+    }

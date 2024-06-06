@@ -1,0 +1,12 @@
+    /* fadein2s - 링크: https://devinus.tistory.com/58 */
+    .fade-wrap .fadein2s {
+        /* 나타나는 효과가 N초 동안 발생 */
+        transition: 2s;
+        /* 투명도 0 (안보임) */
+        opacity: 0;
+    }
+
+    .fade-wrap .fadein2s.fade-in {
+        /* 투명도 0 (보임) */
+        opacity: 1;
+    }

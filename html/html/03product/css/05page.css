@@ -1,0 +1,15 @@
+.bg05 {
+    /* 페이지 5 배경 이미지 */
+    background-image: url('../img/page05-1.png');
+}
+
+
+
+/* 페이지5 제품 구성 정렬 */
+.cb,
+.ps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
