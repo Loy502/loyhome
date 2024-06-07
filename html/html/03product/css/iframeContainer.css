@@ -4,7 +4,7 @@
   position: relative;
   margin: auto;
   max-width: 700px;
-  height: 100%;
+  max-height: 20600px;
   
   border: solid;
 }
