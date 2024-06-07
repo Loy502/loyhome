@@ -13,12 +13,12 @@ window.onkeyup = function(e) {
 	}
 }
 
-/* 외부영역 클릭시 팝업 닫기 */
+/* 외부영역 클릭시 팝업 닫기 
 $(document).mouseup(function (e){
 	if($("#popup_bg").has(e.target).length === 0){
 		$("#popup_bg").hide();
 	}
-});
+}); */
 
 //팝업 닫기
 popup_bg.querySelector('.close').addEventListener('click', function() {
