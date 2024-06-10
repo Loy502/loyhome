@@ -1,12 +1,5 @@
 /**
-* ios 스크롤 기억 설정 --- ios에선 스크롤 기억 기능을 지원하지 않음
-*/
-window.addEventListener('pagehide', function(e){
-    sessionStorage.setItem('historyScrollTop' , document.documentElement.scrollTop);
-});
-
-/**
-* 스크롤이 움직일때마다 값을 sessionStorage에 넣어줌 --- 대부분의 pc 브라우저는 자동으로 지정됨
+* 스크롤이 움직일때마다 값을 sessionStorage에 넣어줌 --- 대부분의 pc 브라우저는 자동으로 지정되나 IOS 사파리와 크롬은 지원안됨
 */
     let scrollHeight = 0;
 addEventListener('scroll', (event) => {
