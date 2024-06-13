@@ -1,0 +1,263 @@
+/* 하트 만들기 참조 링크 - https://codingbroker.tistory.com/55 *? */
+.heart {
+    width: 348px;
+    height: 20px;
+    position: absolute;
+}
+
+.center {
+    margin: 0 auto;
+    width: 20px;
+}
+
+.updown {
+    width: 20px;
+    height: 20px;
+    background: #ea2027;
+    transform: rotate(45deg);
+
+    animation: motion 0.3s linear 0s infinite alternate;
+    -webkit-animation: motion 0.3s linear 0s infinite alternate;
+
+    margin-top: -5px;
+}
+
+.updown::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -50%;
+    border-radius: 50%;
+    background: #ea2027;
+}
+
+.updown::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -50%;
+    border-radius: 50%;
+    background: #ea2027;
+}
+
+
+/* 업다운 인터렉션 - 참고 사이트: https://posting-apollo.tistory.com/55 */
+
+@keyframes motion {
+    0% {
+        margin-top: -5px;
+    }
+
+    100% {
+        margin-top: -15px;
+    }
+}
+
+-webkit-@keyframes motion {
+    0% {
+        margin-top: -5px;
+    }
+
+    100% {
+        margin-top: -15px;
+    }
+}
+
+
+
+
+
+@media all and (max-width: 1280px) {
+    .heart {
+        width: 308.34px;
+    }
+    
+    .center {
+        width: 18px;
+    }
+
+    .updown {
+        width: 18px;
+        height: 18px;
+    }
+
+    .updown::before {
+        width: 18px;
+        height: 18px;
+    }
+
+    .updown::after {
+        width: 18px;
+        height: 18px;
+    }
+
+}
+
+
+
+
+@media all and (max-width: 1024px) {
+    .heart {
+        width: 23.7%;
+    }
+    
+    .center {
+        width: 16px;
+    }
+
+    .updown {
+        width: 16px;
+        height: 16px;
+    }
+
+    .updown::before {
+        width: 16px;
+        height: 16px;
+    }
+
+    .updown::after {
+        width: 16px;
+        height: 16px;
+    }
+
+}
+
+
+
+
+@media all and (max-width: 767px) {
+    @keyframes motion {
+        0% {
+            margin-top: -3px;
+        }
+        100% {
+            margin-top: -10px;
+        }
+    }
+    
+    -webkit-@keyframes motion {
+        0% {
+            margin-top: -3px;
+        }
+        100% {
+            margin-top: -10px;
+        }
+    }
+
+    .heart {
+        width: 31.1%;
+    }
+    
+    .center {
+        width: 14px;
+    }
+
+    .updown {
+        width: 14px;
+        height: 14px;
+    }
+
+    .updown::before {
+        width: 14px;
+        height: 14px;
+    }
+
+    .updown::after {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+
+
+
+@media all and (max-width: 480px) {
+    @keyframes motion {
+        0% {
+            margin-top: -3px;
+        }
+        100% {
+            margin-top: -8px;
+        }
+    }
+    
+    -webkit-@keyframes motion {
+        0% {
+            margin-top: -3px;
+        }
+        100% {
+            margin-top: -8px;
+        }
+    }
+
+    .heart {
+        width: 47.6%;
+    }
+    
+    .center {
+        width: 12px;
+    }
+
+    .updown {
+        width: 12px;
+        height: 12px;
+    }
+
+    .updown::before {
+        width: 12px;
+        height: 12px;
+    }
+
+    .updown::after {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+
+
+
+@media all and (max-width: 280px) {
+    @keyframes motion {
+        0% {
+            margin-top: -2px;
+        }
+        100% {
+            margin-top: -6px;
+        }
+    }
+    
+    -webkit-@keyframes motion {
+        0% {
+            margin-top: -2px;
+        }
+        100% {
+            margin-top: -6px;
+        }
+    }
+
+    .heart {
+        width: 47.6%;
+    }
+    
+    .center {
+        width: 10px;
+    }
+
+    .updown {
+        width: 10px;
+        height: 10px;
+    }
+
+    .updown::before {
+        width: 10px;
+        height: 10px;
+    }
+
+    .updown::after {
+        width: 10px;
+        height: 10px;
+    }
+}
