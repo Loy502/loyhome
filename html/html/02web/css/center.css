@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+.page { /* 섹션 클래스를 content_wide1로 변경한 관계로 다시 정의 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
