@@ -18,7 +18,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    border-radius: 30px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 20px 20px;
@@ -44,26 +44,26 @@
     right: 7px;
 }
 .x{
-    width: 1.5rem; /*24px*/
-    height: 1.5rem; /*24px*/
+    width: 1.625rem; /*26px*/
+    height: 1.625rem; /*26px*/
     border-radius: 50%;
     border-style: none;
     background-color: #9a9898;
     color: #fff;
-    font-size: 0.625rem; /*10px*/
+    font-size: 1.125rem; /*18px*/
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 .today_close{
-    bottom: 10px;
+    bottom: 6px;
     right: 50%;
     transform: translateX(50%);
-    font-size: 0.625rem; /*10px*/
+    font-size: 0.75rem; /*12px*/
     font-weight: 700;
 }
 .close_x{
-    font-size: 0.625rem; /*10px*/
+    font-size: 0.75rem; /*12px*/
     width: 20px;
     height: 20px;
     background-color: #9a9898;
@@ -79,26 +79,25 @@
 .popup_wrap {
     max-width: 350px;
 }
-.today_close{
-    bottom: 7px;
-}
-.close_x{
-    font-size: 0.5rem; /*10px*/
-    width: 18px;
-    height: 18px;
-}
-
 
 /* 태블릿CSS----------------------------------------------------------------------------------------------------
 	1024-768px (반응형)
 	*/
 @media all and (max-width: 1024px){
     .popup_wrap{
-        border-radius: 25px;
         max-width: 300px;
     }
+    .x{
+        font-size: 1rem; /*16px*/
+        top: 6px;
+    }
     .today_close{
-        bottom: 1%;
+        bottom: 0.9%;
+    }
+    .close_x{
+        font-size: 0.688rem; /*11px*/
+        width: 1.25rem; /*20px*/
+        height: 1.25rem; /*18px*/
     }
 }
 
@@ -107,21 +106,20 @@
 	*/
 @media all and (max-width: 767px){
     .popup_wrap{
-        border-radius: 20px;
     }
     .x{
-        width: 1.25rem; /*20px*/
-        height: 1.25rem; /*20px*/
-        font-size: 0.5rem; /*8px*/
+        width: 1.5rem; /*24px*/
+        height: 1.5rem; /*24px*/
+        font-size: 0.875rem; /*14px*/
     }
     .today_close{
-        bottom: 1.5%;
-        font-size: 0.5rem; /*8px*/
+        bottom: 1.2%;
+        font-size: 0.688rem; /*11px*/
     }
     .close_x{
-        font-size: 0.5rem; /*8px*/
-        width: 1rem; /*16px*/
-        height: 1rem; /*16px*/
+        font-size: 0.688rem; /*11px*/
+        width: 1.125rem; /*18px*/
+        height: 1.125rem; /*18px*/
     }
 }
 
@@ -136,16 +134,19 @@
         max-width: 250px;
     }
     .x{
-        width: 1rem; /*16px*/
-        height: 1rem; /*16px*/
+        top: 6px;
+        font-size: 0.75rem; /*12px*/
+        width: 1.25rem; /*20px*/
+        height: 1.25rem; /*20px*/
     }
     .today_close{
-        font-size: 0.5rem; /*8px*/
+        bottom: 0.7%;
+        font-size: 0.563rem; /*9px*/
     }
     .close_x{
-        font-size: 0.5rem; /*8px*/
-        width: 0.75rem; /*12px*/
-        height: 0.75rem; /*12px*/
+        font-size: 0.625rem; /*10px*/
+        width: 1rem; /*14px*/
+        height: 1rem; /*14px*/
     }
 }
 
@@ -159,16 +160,18 @@
         max-width: 180px;
     }
     .x{
-        width: 0.75rem; /*12px*/
-        height: 0.75rem; /*12px*/
-        font-size: 0.375rem; /*6px*/
+        top: 5px;
+        width: 1rem; /*14px*/
+        height: 1rem; /*14px*/
+        font-size: 0.625rem; /*10px*/
     }
     .today_close{
-        font-size: 0.375rem; /*6px*/
+        font-size: 0.438rem; /*6px*/
         bottom: 0.5%;
     }
     .close_x{
-        width: 0.75rem; /*12px*/
-        height: 0.75rem; /*12px*/
+        font-size: 0.5rem; /*7px*/
+        width: 0.781rem; /*12.5px*/
+        height: 0.781rem; /*12.5px*/
     }
 }
