@@ -56,6 +56,14 @@
 
 	<!--리스트 항목 강조 어트렉션 CSS-->
 	<link rel="stylesheet" type="text/css" href="css/updown.css">
+
+
+	<!--페이지 로드 페이드인 CSS-->
+	<link rel="stylesheet" type="text/css" href="css/lodefaedin.css">
+
+
+	<!--전체 스크롤 페이드인 CSS-->
+	<link rel="stylesheet" type="text/css" href="css/scrollup.css">
 </head>
 
 <body>
@@ -67,18 +75,13 @@
 
 	<!--01헤더 섹션-------------------------------------------------->
 	<!--로고 바-->
-	<header class="logo_bar"> <!--무지 상하단 여백-->
+	<header class="logo_bar lodefadein"> <!--무지 상하단 여백-->
 		<div class="logo_background"> <!--텍스트 타이트-->
 			<h1 id="wide" class="logo_wide"> <!--너비 1440px-->
 				<a href="index.html">
 					<img class="logo" src="img/main/logo/logo_symbol(200).svg" alt="메인 로고">
 				</a>
 				<!--로고바 아이콘-->
-				<ul class="left_icon header_icon">
-					<li class="icon_item">
-						<img src="img/main/icon/search.png" alt="검색">
-					</li>
-				</ul>
 				<ul class="right_icon header_icon">
 					<li class="icon_item">
 						<a href="https://www.instagram.com/im_loys/" target="_blank">
@@ -101,7 +104,7 @@
 	</header>
 
 	<!--메뉴바-->
-	<nav class="navbar_down">
+	<nav class="navbar_down lodefadein">
 		<div class="gnb">
 			<div class="menu menu1"><a href="html/02-web.html">웹디자인</a></div>
 			<div class="menu menu2"><a href="html/03-product.html">상품페이지</a></div>
@@ -119,7 +122,7 @@
 
 	<div id="wide" class="content_wide">
 		<!--02 메인 섹션-------------------------------------------------->
-		<section class="main_section">
+		<section class="main_section lodefaedin">
 			<!--스와이프-->
 			<div class="main_all">
 				<div class="swiper swiper1">
@@ -167,9 +170,9 @@
 
 
 		<!--03웹디자인 리스트 섹션-------------------------------------------------->
-		<section id="web" class="list_section">
+		<section id="web" class="list_section lodefadein">
 			<!--웹디자인 타이틀-->
-			<hgroup id="web_title_wrap" class="title_all">
+			<hgroup id="web_title_wrap" class="title_all scrollup">
 				<!--메인 타이틀-->
 				<a href="html/02-web.html">
 					<div class="main_title">web design</div>
@@ -185,9 +188,9 @@
 
 			<!--웹디자인 리스트-->
 			<div id="web_list_wrap" class="list_container">
+				<ul id="web_list_item" class="list_item scrollup">
 
-				<div class="heart"><div class="center"><div class="updown"></div></div></div>
-				<ul id="web_list_item" class="list_item">
+					<div class="heart"><div class="center"><div class="updown"></div></div></div>
 					<a href="html/html/02web/02-web_d(인스타팔로우).html">
 						<li class="img"><img class="thumbnail" src="html/html/02web/img/인스타팔로우/인스타팔로우이벤트-썸넬(750).jpg"
 								alt="썸네일"></li>
@@ -197,7 +200,7 @@
 						<li class="text text3">[이벤트 페이지]</li>
 					</a>
 				</ul>
-				<ul id="web_list_item" class="list_item">
+				<ul id="web_list_item" class="list_item scrollup">
 
 					<div class="heart"><div class="center"><div class="updown"></div></div></div>
 					<a href="html/html/02web/02-web_d(스마일게이트).html">
@@ -209,7 +212,7 @@
 						<li class="text text3">[게임 프로모션 페이지 리뉴얼]</li>
 					</a>
 				</ul>
-				<ul id="web_list_item" class="list_item">
+				<ul id="web_list_item" class="list_item scrollup">
 
 					<div class="heart"><div class="center"><div class="updown"></div></div></div>
 					<a href="html/html/02web/02-web_d(온라인네일박람회).html">
@@ -223,7 +226,7 @@
 						<li class="text text3">[SNS 카드 뉴스]</li>
 					</a>
 				</ul>
-				<ul id="web_list_item" class="list_item">
+				<ul id="web_list_item" class="list_item scrollup">
 					<a href="html/html/02web/02-web_d(온라인박람회모음).html">
 						<li class="img"><img class="thumbnail"
 								src="https://github.com/loy-502/loyhome2/blob/main/img/%EC%98%A8%EB%9D%BC%EC%9D%B8%EB%B0%95%EB%9E%8C%ED%9A%8C%EB%AA%A8%EC%9D%8C/%5B%EC%87%BC%EB%AF%B8%5D%EC%98%A8%EB%9D%BC%EC%9D%B8%EB%B0%95%EB%9E%8C%ED%9A%8C%EB%AA%A8%EC%9D%8C(350px).gif?raw=true"
@@ -243,7 +246,7 @@
 
 
 
-				<ul id="web_list_item" class="list_item">
+				<ul id="web_list_item" class="list_item scrollup">
 					<a href="html/html/02web/02-web_d(할인이벤트모음).html">
 						<li class="img"><img class="thumbnail"
 								src="https://github.com/loy-502/loyhome2/blob/main/img/%ED%95%A0%EC%9D%B8%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%AA%A8%EC%9D%8C/%5B%EC%87%BC%EB%AF%B8%5D%ED%95%A0%EC%9D%B8%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%AA%A8%EC%9D%8Call(350px).gif?raw=true"
@@ -255,7 +258,7 @@
 						<li class="text text3">[SNS 카드 뉴스]</li>
 					</a>
 				</ul>
-				<ul id="web_list_item" class="list_item">
+				<ul id="web_list_item" class="list_item scrollup">
 
 					<div class="heart"><div class="center"><div class="updown"></div></div></div>
 					<a href="html/html/02web/02-web_d(듀얼라인스마트램프).html">
@@ -268,7 +271,7 @@
 						<li class="text text3">[SNS 카드 뉴스 & 릴스 영상]</li>
 					</a>
 				</ul>
-				<ul id="web_list_item" class="list_item">
+				<ul id="web_list_item" class="list_item scrollup">
 					<a href="html/html/02web/02-web_d(리브랜딩).html">
 						<li class="img"><img class="thumbnail" src="html/html/02web/img/리브랜딩/리브랜딩무료배송썸네일.png" alt="썸네일">
 						</li>
@@ -277,7 +280,7 @@
 						<li class="text text3">[이벤트 페이지]</li>
 					</a>
 				</ul>
-				<ul id="web_list_item" class="list_item">
+				<ul id="web_list_item" class="list_item scrollup">
 					<a href="html/html/02web/02-web_d(브이무드릴스커버).html">
 						<li class="img"><img class="thumbnail"
 								src="https://github.com/loy-502/loyhome2/blob/main/img/V-MOOD%EC%9D%B8%EC%8A%A4%ED%83%80%EB%A6%B4%EC%8A%A4%EC%BB%A4%EB%B2%84/%5B%EC%87%BC%EB%AF%B8%5DV-MOOD%EB%A6%B4%EC%8A%A4(350px).gif?raw=true"
@@ -296,7 +299,7 @@
 
 
 
-				<ul id="web_list_item" class="list_item">
+				<ul id="web_list_item" class="list_item scrollup">
 					<a href="html/html/02web/02-web_d(화이트데이).html">
 						<li class="img"><img class="thumbnail" src="html/html/02web/img/화이트데이/화이트데이썸넬(750).jpg"
 								alt="썸네일"></li>
@@ -306,7 +309,7 @@
 						<li class="text text3">[이벤트 페이지]</li>
 					</a>
 				</ul>
-				<ul id="web_list_item" class="list_item">
+				<ul id="web_list_item" class="list_item scrollup">
 					<a href="html/html/02web/02-web_d(영거데이).html">
 						<li class="img"><img class="thumbnail" src="html/html/02web/img/영거데이/썸넬(750).jpg" alt="썸네일">
 						</li>
@@ -317,7 +320,7 @@
 						<li class="text text3">[이벤트 페이지]</li>
 					</a>
 				</ul>
-				<ul id="web_list_item" class="list_item">
+				<ul id="web_list_item" class="list_item scrollup">
 					<a href="html/html/02web/02-web_d(이름찾기).html">
 						<li class="img"><img class="thumbnail" src="html/html/02web/img/이름찾기/이름찾기이벤트썸넬(750).jpg"
 								alt="썸네일"></li>
@@ -328,7 +331,7 @@
 						<li class="text text3">[이벤트 페이지]</li>
 					</a>
 				</ul>
-				<ul id="web_list_item" class="list_item">
+				<ul id="web_list_item" class="list_item scrollup">
 					<a href="html/html/02web/02-web_d(사은감사제).html">
 						<li class="img"><img class="thumbnail" src="html/html/02web/img/사은감사제1/사은품증정-썸네일.jpg" alt="썸네일">
 						</li>
@@ -347,7 +350,7 @@
 
 
 			<!--웹디자인 더보기 버튼-->
-			<div id="more_button_wrap">
+			<div id="more_button_wrap" class="scrollup">
 				<a href="html/02-web.html"><button class="more_button web_more">더보기 ></button></a>
 			</div>
 		</section>
@@ -363,7 +366,7 @@
 		<section id="product" class="list_section">
 			<div id="product_wrap" class="category_all">
 				<!--상품페이지 타이틀-->
-				<hgroup id="product_title_wrap" class="title_all">
+				<hgroup id="product_title_wrap" class="title_all scrollup">
 					<!--메인 타이틀-->
 					<a href="html/03-product.html">
 						<div class="product_main_title main_title">product page</div>
@@ -372,7 +375,7 @@
 					</a>
 				</hgroup>
 				<!--상품페이지 업체명 리스트-->
-				<ul class="company_list">
+				<ul class="company_list scrollup">
 					<li>난닝구</li>
 					<li>줄로그</li>
 					<li>얀새</li>
@@ -391,7 +394,7 @@
 
 				<div id="product_list_wrap" class="list_container">
 
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 
 						<div class="heart"><div class="center"><div class="updown"></div></div></div>
 						<a href="html/html/03product/03-product_d(쇼미)브이무드.html">
@@ -403,7 +406,7 @@
 							<li class="text text3">[젤네일]</li>
 						</a>
 					</ul>
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(쇼미)벨라비.html">
 							<li class="img"><img class="thumbnail"
 									src="https://github.com/loy5025/loyhome3/blob/main/img/%EB%B2%A8%EB%9D%BC%EB%B9%84/%5B%EC%87%BC%EB%AF%B8%5D%EB%B2%A8%EB%9D%BCB(Bella-Brilliant)%20%EC%8D%B8%EB%84%A4%EC%9D%BC(350).gif?raw=true"
@@ -413,7 +416,7 @@
 							<li class="text text3">[젤네일]</li>
 						</a>
 					</ul>
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(호호리)꿀보젤.html">
 							<li class="img"><img class="thumbnail"
 									src="https://github.com/loy5025/loyhome3/blob/main/img/%EA%BF%80%EB%B3%B4%EC%A0%A4/%5B%ED%98%B8%ED%98%B8%EB%A6%AC%5D%EA%BF%80%EB%B3%B4%EC%A0%A4%EC%8D%B8%EB%84%A4%EC%9D%BC(350).gif?raw=true"
@@ -423,7 +426,7 @@
 							<li class="text text3">[젤네일]</li>
 						</a>
 					</ul>
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 
 						<div class="heart"><div class="center"><div class="updown"></div></div></div>
 						<a href="html/html/03product/03-product_d(호호리)무비스타.html">
@@ -444,7 +447,7 @@
 
 
 
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(호호리)꿀보젤대용량.html">
 							<li class="img"><img class="thumbnail"
 									src="https://github.com/loy-502/loyhome2/blob/main/img/%ED%98%B8%ED%98%B8%EB%A6%AC/%EA%BF%80%EB%B3%B4%EC%A0%A4%EB%8C%80%EC%9A%A9%EB%9F%89/%5B%ED%98%B8%ED%98%B8%EB%A6%AC%5D%EA%BF%80%EB%B3%B4%EC%A0%A415G(350px).gif?raw=true"
@@ -454,7 +457,7 @@
 							<li class="text text3">[젤네일]</li>
 						</a>
 					</ul>
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(호호리)프린세스리리.html">
 							<li class="img"><img class="thumbnail"
 									src="https://github.com/loy-502/loyhome2/blob/main/img/%ED%98%B8%ED%98%B8%EB%A6%AC/%ED%94%84%EB%A6%B0%EC%84%B8%EC%8A%A4%EB%A6%AC%EB%A6%AC/%5B%ED%98%B8%ED%98%B8%EB%A6%AC%5D%ED%94%84%EB%A6%B0%EC%84%B8%EC%8A%A4%EB%A6%AC%EB%A6%AC(350px).gif?raw=true"
@@ -464,7 +467,7 @@
 							<li class="text text3">[젤네일]</li>
 						</a>
 					</ul>
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 
 						<div class="heart"><div class="center"><div class="updown"></div></div></div>
 						<a href="html/html/03product/03-product_d(쇼미)엘리시온.html">
@@ -476,7 +479,7 @@
 							<li class="text text3">[젤네일]</li>
 						</a>
 					</ul>
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(호호리)폼폼이.html">
 							<li class="img"><img class="thumbnail"
 									src="https://github.com/loy-502/loyhome2/blob/main/img/%ED%98%B8%ED%98%B8%EB%A6%AC/%ED%8F%BC%ED%8F%BC%EC%9D%B4/%5B%ED%98%B8%ED%98%B8%EB%A6%AC%5D%ED%8F%BC%ED%8F%BC%EC%9D%B410%EC%A2%85%ED%8A%9C%EB%B8%8C%EC%A0%A4(350px).gif?raw=true"
@@ -494,7 +497,7 @@
 
 
 
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(로로걸)스윗드림.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/03product//img/로로걸/스윗드림슬립잠옷세트/스윗드림슬립잠옷썸넬(350).gif" alt="썸네일">
@@ -504,7 +507,7 @@
 							<li class="text text3">[여성 슬립 웨어]</li>
 						</a>
 					</ul>
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(공주샵)샹그릴라.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/03product//img/공주샵/샹그릴라/샹그릴라썸넬GIF(350).gif" alt="썸네일"></li>
@@ -513,7 +516,7 @@
 							<li class="text text3">[웨딩 소품]</li>
 						</a>
 					</ul>
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(공주샵)엔젤리나.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/03product//img/공주샵/엔젤리나/엔젤리나썸넬GIF(350).gif" alt="썸네일"></li>
@@ -522,7 +525,7 @@
 							<li class="text text3">[스몰 웨딩 원피스]</li>
 						</a>
 					</ul>
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(난닝구)서비든.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/03product//img/난닝구/서비든/⑬03-서비든-니트가디건-re_350(JG).gif" alt="썸네일">
@@ -537,7 +540,7 @@
 
 
 
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(블링하이)U자반가발1.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/03product//img/블링하이/U자반가발1/U자반가발썸넬GIF(350).gif" alt="썸네일"></li>
@@ -546,7 +549,7 @@
 							<li class="text text3">[여성 반가발]</li>
 						</a>
 					</ul>
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(줄로그)에베츠.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/03product//img/줄로그/에베츠/①에베츠-브이넥셔링원피스350(JG)(JULL).gif" alt="썸네일">
@@ -556,7 +559,7 @@
 							<li class="text text3">[여성 의류]</li>
 						</a>
 					</ul>
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(줄로그)에시르.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/03product//img/줄로그/에시르/①에시르-나시원피스350(JG)(JULL).gif" alt="썸네일">
@@ -566,7 +569,7 @@
 							<li class="text text3">[여성 의류]</li>
 						</a>
 					</ul>
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(난닝구)데이빌.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/03product//img/난닝구/데이빌/데이빌남방썸넬GIF(350).gif" alt="썸네일"></li>
@@ -583,7 +586,7 @@
 
 
 
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(공주샵)파인애플.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/03product//img/공주샵/파인애플/썸넬GIF(350).gif" alt="썸네일"></li>
@@ -592,7 +595,7 @@
 							<li class="text text3">[패션 잡화]</li>
 						</a>
 					</ul>
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(얀새)여신비키니.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/03product//img/얀새/여신비키니/나는여신비키니-랩타올썸넬GIF(350).gif" alt="썸네일">
@@ -602,7 +605,7 @@
 							<li class="text text3">[수영복ㅣ비치웨어]</li>
 						</a>
 					</ul>
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(공주샵)브라팬티.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/03product//img/공주샵/브라팬티/3361-브라팬티썸넬GIF(350).gif" alt="썸네일"></li>
@@ -611,7 +614,7 @@
 							<li class="text text3">[언더웨어]</li>
 						</a>
 					</ul>
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(줄로그)오블린+레니펠.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/03product//img/줄로그/오블린+레니펠/①오블린+레니펠350(JG)(JULL).gif" alt="썸네일">
@@ -627,7 +630,7 @@
 
 
 
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(난닝구)더브엔.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/03product//img/난닝구/더브엔/더브엔썸넬GIF(350).gif" alt="썸네일"></li>
@@ -636,7 +639,7 @@
 							<li class="text text3">[여성 의류]</li>
 						</a>
 					</ul>
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(공주샵)박시A.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/03product//img/공주샵/박시A/박시A썸넬GIF(350).gif" alt="썸네일"></li>
@@ -645,7 +648,7 @@
 							<li class="text text3">[이지웨어]</li>
 						</a>
 					</ul>
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(얀새)퍼피.html">
 							<li class="img"><img class="thumbnail" src="html/html/03product//img/얀새/퍼피/퍼피썸넬GIF(350).gif"
 									alt="썸네일"></li>
@@ -654,7 +657,7 @@
 							<li class="text text3">[여성 의류]</li>
 						</a>
 					</ul>
-					<ul id="product_list_item" class="list_item">
+					<ul id="product_list_item" class="list_item scrollup">
 						<a href="html/html/03product/03-product_d(수지벨라)예뻐서반해.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/03product//img/수지벨라/예뻐서반해/예뻐서반해썸넬GIF(350).gif" alt="썸네일"></li>
@@ -671,7 +674,7 @@
 
 
 			<!--상품페이지 더보기 버튼-->
-			<div id="more_button_wrap">
+			<div id="more_button_wrap" class="scrollup">
 				<button class="more_button web_more"><a href="html/03-product.html">더보기 ></a></button>
 			</div>
 		</section>
@@ -687,7 +690,7 @@
 		<section id="video" class="list_section">
 			<div id="video_wrap" class="category_all">
 				<!--영상편집 타이틀-->
-				<hgroup id="video_title_wrap" class="title_all">
+				<hgroup id="video_title_wrap" class="title_all scrollup">
 					<!--메인 타이틀-->
 					<a href="html/07-video.html">
 						<div class="video_main_title main_title">video editing</div>
@@ -697,7 +700,7 @@
 				</hgroup>
 				<!--영상편집 리스트-->
 				<div id="video_list_wrap" class="list_container">
-					<ul id="video_list_item" class="video_list_item">
+					<ul id="video_list_item" class="video_list_item scrollup">
 						<a href="html/html/07video/07-video_d(유튜브인트로).html">
 							<li class="img"><img class="thumbnail" src="html/html/07video/img/유튜브인트로썸넬.png" alt="썸네일">
 							</li>
@@ -706,7 +709,7 @@
 							<li class="text text3">[ 프리미어 ] 인트로 영상 제작</li>
 						</a>
 					</ul>
-					<ul id="video_list_item" class="video_list_item">
+					<ul id="video_list_item" class="video_list_item scrollup">
 						<a href="html/html/07video/07-video_d(10년회춘꿀팁).html">
 							<li class="img"><img class="thumbnail" src="html/html/07video/img/10년회춘꿀팁썸넬.jpg" alt="썸네일">
 							</li>
@@ -716,7 +719,7 @@
 							<li class="text text3">[ 포토샵 무적권 따라하기 ] 사진 리터치</li>
 						</a>
 					</ul>
-					<ul id="video_list_item" class="video_list_item">
+					<ul id="video_list_item" class="video_list_item scrollup">
 						<a href="html/html/07video/07-video_d(그라데이션텍스트).html">
 							<li class="img"><img class="thumbnail" src="html/html/07video/img/그라데이션투명텍스트.jpg" alt="썸네일">
 							</li>
@@ -726,7 +729,7 @@
 							<li class="text text3">[ 포토샵 무적권 따라하기 ] 포토샵 소스 제작</li>
 						</a>
 					</ul>
-					<ul id="video_list_item" class="video_list_item">
+					<ul id="video_list_item" class="video_list_item scrollup">
 						<a href="html/html/07video/07-video_d(클리핑마스크).html">
 							<li class="img"><img class="thumbnail" src="html/html/07video/img/클리핑마스크썸넬.jpg" alt="썸네일">
 							</li>
@@ -735,7 +738,7 @@
 							<li class="text text3">[ 포토샵 무적권 따라하기 ] 클리핑 마스크 기본 개념</li>
 						</a>
 					</ul>
-					<ul id="video_list_item" class="video_list_item">
+					<ul id="video_list_item" class="video_list_item scrollup">
 						<a href="html/html/07video/07-video_d(레이어마스크).html">
 							<li class="img"><img class="thumbnail" src="html/html/07video/img/레이어마스크썸넬.jpg" alt="썸네일">
 							</li>
@@ -744,7 +747,7 @@
 							<li class="text text3">[ 포토샵 무적권 따라하기 ] 레이어 마스크 기본 개념</li>
 						</a>
 					</ul>
-					<ul id="video_list_item" class="video_list_item">
+					<ul id="video_list_item" class="video_list_item scrollup">
 						<a href="html/html/07video/07-video_d(목업디자인만들기).html">
 							<li class="img"><img class="thumbnail" src="html/html/07video/img/목업디자인제작썸넬.jpg" alt="썸네일">
 							</li>
@@ -757,7 +760,7 @@
 				</div>
 			</div>
 			<!--영상편집 더보기 버튼-->
-			<div id="more_button_wrap">
+			<div id="more_button_wrap" class="scrollup">
 				<button class="more_button web_more"><a href="html/07-video.html">더보기 ></a></button>
 			</div>
 		</section>
@@ -771,8 +774,8 @@
 
 		<!--04포토샷 스와이프 섹션-------------------------------------------------->
 		<section id="photo" class="list_section">
-			<!--웹디자인 타이틀-->
-			<hgroup id="photo_title_wrap" class="title_all">
+			<!--포토 타이틀-->
+			<hgroup id="photo_title_wrap" class="title_all scrollup">
 				<!--메인 타이틀-->
 				<a href="html/05-photo.html">
 					<div class="main_title photo_main_title">loy photoshoot</div>
@@ -780,7 +783,7 @@
 			</hgroup>
 
 			<!--포토샷 슬라이드 4칸-->
-			<div class="swiper swiper2 swiper2-1">
+			<div class="swiper swiper2 swiper2-1 scrollup">
 				<div class="swiper-wrapper swiper-wrapper2">
 					<div class="swiper-slide swiper-slide2"><a href="html/html/05photo/05-photo_d1.html"><img
 								src="html/html/05photo/img/가족촬영/썸넬GIF(350).gif" alt="썸네일"></a></div>
@@ -824,7 +827,7 @@
 		<section id="retouching" class="list_section">
 			<div id="retouching_wrap" class="category_all">
 				<!--사진보정 타이틀-->
-				<hgroup id="retouching_title_wrap" class="title_all">
+				<hgroup id="retouching_title_wrap" class="title_all scrollup">
 					<!--메인 타이틀-->
 					<a href="html/06-retouching.html">
 						<div class="retouching_main_title main_title">Photo Retouching</div>
@@ -834,7 +837,7 @@
 				</hgroup>
 				<!--사진보정 리스트-->
 				<div id="retouching_list_wrap" class="list_container">
-					<ul id="retouching_list_item" class="list_item">
+					<ul id="retouching_list_item" class="list_item scrollup">
 						<a href="html/html/06retouching/06-retouching_d(줄로그)1.html">
 							<li class="img"><img class="thumbnail" src="html/html/06retouching/img/줄로그/1/썸넬GIF(350).gif"
 									alt="썸네일"></li>
@@ -843,7 +846,7 @@
 							<li class="text text3">[여성 의류]</li>
 						</a>
 					</ul>
-					<ul id="retouching_list_item" class="list_item">
+					<ul id="retouching_list_item" class="list_item scrollup">
 						<a href="html/html/06retouching/06-retouching_d(가발닷컴)1.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/06retouching/img/가발닷컴/1/썸넬GIF(350).gif" alt="썸네일"></li>
@@ -852,7 +855,7 @@
 							<li class="text text3">[가발]</li>
 						</a>
 					</ul>
-					<ul id="retouching_list_item" class="list_item">
+					<ul id="retouching_list_item" class="list_item scrollup">
 						<a href="html/html/06retouching/06-retouching_d(공주샵)6.html">
 							<li class="img"><img class="thumbnail" src="html/html/06retouching/img/공주샵/6/썸넬GIF(350).gif"
 									alt="썸네일"></li>
@@ -861,7 +864,7 @@
 							<li class="text text3">[이너 웨어]</li>
 						</a>
 					</ul>
-					<ul id="retouching_list_item" class="list_item">
+					<ul id="retouching_list_item" class="list_item scrollup">
 						<a href="html/html/06retouching/06-retouching_d(공주샵)9.html">
 							<li class="img"><img class="thumbnail" src="html/html/06retouching/img/공주샵/9/썸넬GIF(350).gif"
 									alt="썸네일"></li>
@@ -871,7 +874,7 @@
 						</a>
 					</ul>
 
-					<ul id="retouching_list_item" class="list_item">
+					<ul id="retouching_list_item" class="list_item scrollup">
 						<a href="html/html/06retouching/06-retouching_d(줄로그)25.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/06retouching/img/줄로그/25/썸넬GIF(350).gif" alt="썸네일"></li>
@@ -880,7 +883,7 @@
 							<li class="text text3">[여성 의류]</li>
 						</a>
 					</ul>
-					<ul id="retouching_list_item" class="list_item">
+					<ul id="retouching_list_item" class="list_item scrollup">
 						<a href="html/html/06retouching/06-retouching_d(줄로그)2.html">
 							<li class="img"><img class="thumbnail" src="html/html/06retouching/img/줄로그/2/썸넬GIF(350).gif"
 									alt="썸네일"></li>
@@ -889,7 +892,7 @@
 							<li class="text text3">[여성 의류]</li>
 						</a>
 					</ul>
-					<ul id="retouching_list_item" class="list_item">
+					<ul id="retouching_list_item" class="list_item scrollup">
 						<a href="html/html/06retouching/06-retouching_d(줄로그)15.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/06retouching/img/줄로그/15/썸넬GIF(350).gif" alt="썸네일"></li>
@@ -898,7 +901,7 @@
 							<li class="text text3">[여성 의류]</li>
 						</a>
 					</ul>
-					<ul id="retouching_list_item" class="list_item">
+					<ul id="retouching_list_item" class="list_item scrollup">
 						<a href="html/html/06retouching/06-retouching_d(난닝구)4.html">
 							<li class="img"><img class="thumbnail" src="html/html/06retouching/img/난닝구/4/썸넬GIF(350).gif"
 									alt="썸네일"></li>
@@ -908,7 +911,7 @@
 						</a>
 					</ul>
 
-					<ul id="retouching_list_item" class="list_item">
+					<ul id="retouching_list_item" class="list_item scrollup">
 						<a href="html/html/06retouching/06-retouching_d(줄로그)8.html">
 							<li class="img"><img class="thumbnail" src="html/html/06retouching/img/줄로그/8/썸넬GIF(350).gif"
 									alt="썸네일"></li>
@@ -917,7 +920,7 @@
 							<li class="text text3">[여성 의류]</li>
 						</a>
 					</ul>
-					<ul id="retouching_list_item" class="list_item">
+					<ul id="retouching_list_item" class="list_item scrollup">
 						<a href="html/html/06retouching/06-retouching_d(가발닷컴)2.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/06retouching/img/가발닷컴/2/썸넬GIF(350).gif" alt="썸네일"></li>
@@ -926,7 +929,7 @@
 							<li class="text text3">[가발]</li>
 						</a>
 					</ul>
-					<ul id="retouching_list_item" class="list_item">
+					<ul id="retouching_list_item" class="list_item scrollup">
 						<a href="html/html/06retouching/06-retouching_d(난닝구)5.html">
 							<li class="img"><img class="thumbnail" src="html/html/06retouching/img/난닝구/5/썸넬GIF(350).gif"
 									alt="썸네일"></li>
@@ -935,7 +938,7 @@
 							<li class="text text3">[여성 의류]</li>
 						</a>
 					</ul>
-					<ul id="retouching_list_item" class="list_item">
+					<ul id="retouching_list_item" class="list_item scrollup">
 						<a href="html/html/06retouching/06-retouching_d(줄로그)26.html">
 							<li class="img"><img class="thumbnail"
 									src="html/html/06retouching/img/줄로그/26/썸넬GIF(350).gif" alt="썸네일"></li>
@@ -946,7 +949,7 @@
 					</ul>
 				</div>
 				<!--사진보정 더보기 버튼-->
-				<div id="more_button_wrap">
+				<div id="more_button_wrap" class="scrollup">
 					<button class="more_button web_more"><a href="html/06-retouching.html">더보기 ></a></button>
 				</div>
 		</section>
@@ -961,7 +964,7 @@
 
 
 	<!--08 푸터 섹션-------------------------------------------------->
-	<footer class="footer">
+	<footer class="footer scrollup">
 		<p>copyright&copy; 2022.'THIS IS LOY WORLD' DESIGN HOME ALL RIGHTS RESERVED.</p>
 	</footer>
 
@@ -971,7 +974,7 @@
 
 
 	<!--09픽스 아이콘 (스마트기기용)-------------------------------------------------->
-	<div class="mobile_icon_hidden"><!--아이콘 숨기기-->
+	<div class="mobile_icon_hidden lodefadein"><!--아이콘 숨기기-->
 		<ul class="mobile_icon">
 			<li><a href="https://www.instagram.com/im_loys/" target="_blank"><img src="img/main/icon/instar.png"
 						alt="인스타"></a></li>
@@ -989,7 +992,7 @@
 	<!--10 레이어 팝업 섹션-------------------------------------------------->
 	<div id="popup_bg" class="show">
 		<!--팝업 배경-->
-		<div class="popup_wrap">
+		<div class="popup_wrap lodefadein">
 			<!--팝업 이미지-->
 			<img src="img/main/popup/popup.jpg">
 			<!--팝업 버튼 영역 = 닫기-->
@@ -1019,12 +1022,13 @@
 	<script src="js/00_4-main_swiper2.js"></script>
 
 	<!--뒤로가기 시 제자리 JS-->
-	<!--
 	<script src="js/00_5-place.js"></script>
-	-->
 
 	<!--레이어 팝업 JS-->
 	<script src="js/popup.js"></script>
+
+	<!--전체 스크롤 페이드인 JS-->
+	<script src="js/scrollup.js"></script>
 
 </body>
 
