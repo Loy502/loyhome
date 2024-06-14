@@ -100,7 +100,7 @@
 
 @media all and (max-width: 1024px) {
     .heart {
-        width: 23.7%;
+        width: 100%;
     }
     
     .center {
@@ -145,10 +145,6 @@
             margin-top: -10px;
         }
     }
-
-    .heart {
-        width: 31.1%;
-    }
     
     .center {
         width: 14px;
@@ -191,10 +187,6 @@
             margin-top: -8px;
         }
     }
-
-    .heart {
-        width: 47.6%;
-    }
     
     .center {
         width: 12px;
@@ -236,10 +228,6 @@
         100% {
             margin-top: -6px;
         }
-    }
-
-    .heart {
-        width: 47.6%;
     }
     
     .center {
