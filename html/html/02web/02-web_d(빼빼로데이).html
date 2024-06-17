@@ -38,6 +38,13 @@
 <link rel="stylesheet" type="text/css" href="../css/thumbnail.css">
 <!--디테일 페이지-->
 <link rel="stylesheet" type="text/css" href="../css/page.css">
+	
+	
+<!--페이지 로드 페이드인 CSS-->
+<link rel="stylesheet" type="text/css" href="../../../css/lodefaedin.css">
+
+<!--전체 스크롤업 CSS-->
+<link rel="stylesheet" type="text/css" href="../../../css/scrollup.css">
 </head>
 <body>
 
@@ -46,7 +53,7 @@
 	<!--01헤더 섹션-------------------------------------------------->
 	<!--로고 바-->
 	<header class="logo_bar"> <!--무지 상하단 여백-->
-		<div class="logo_background"> <!--텍스트 타이트-->
+		<div class="logo_background lodefadein"> <!--텍스트 타이트-->
 			<h1 id="wide" class="logo_wide"> <!--너비 1440px-->
 				<a href="../../../index.html">
 					<img class="logo" src="../../../img/main/logo/logo_symbol(200).svg" alt="메인 로고">
@@ -79,7 +86,7 @@
 	</header> 
 
 	<!--메뉴바-->
-	<nav class="navbar_down">
+	<nav class="navbar_down lodefadein">
 		<div class="gnb">
 			<div class="menu menu1"><a href="../../../html/02-web.html">웹디자인</a></div>
 			<div class="menu menu2"><a href="../../../html/03-product.html">상품페이지</a></div>
@@ -97,8 +104,8 @@
 		<div class="space1"></div>
         <!--썸네일 섹션-->
 		<section class="thumbnail_wrap">
-            <img src="img/빼빼로/썸넬(750).jpg" alt="썸네일">
-            <ul class="work">
+            <img src="img/빼빼로/썸넬(750).jpg" class="scrollup" alt="썸네일">
+            <ul class="work scrollup">
                 <li class="title">
 					<pre>
 11.11
@@ -122,18 +129,18 @@
         </section>
         <!--공백-->
 		<div class="space1"></div>
-        <hr class="line1">
+        <hr class="line1 scrollup">
         <!--공백-->
         <div class="space"></div>
         <section class="page">
-			<p>[ 홈 배너 ]</p>
-			<img src="img/빼빼로/빼빼로배너1.jpg">
+			<p class="scrollup">[ 홈 배너 ]</p>
+			<img src="img/빼빼로/빼빼로배너1.jpg" class="scrollup">
 			<div class="space"></div>
-			<p>[ 홈 팝업 ]</p>
-			<img src="img/빼빼로/빼빼로팝업.jpg">
+			<p class="scrollup">[ 홈 팝업 ]</p>
+			<img src="img/빼빼로/빼빼로팝업.jpg" class="scrollup">
 			<div class="space"></div>
-			<p>[ 이벤트 페이지 ]</p>
-			<img src="img/빼빼로/pepero.jpg">
+			<p class="scrollup">[ 이벤트 페이지 ]</p>
+			<img src="img/빼빼로/pepero.jpg" class="scrollup">
         </section>
 
         <!--공백-->
@@ -146,11 +153,11 @@
 
 	
 	<!--08 푸터 섹션-------------------------------------------------->
-	<footer class="footer">
+	<footer class="footer scrollup">
 			<p>copyright&copy; 2022.'THIS IS LOY WORLD' DESIGN HOME ALL RIGHTS RESERVED.</p>
 	</footer>
 	<!--09픽스 아이콘 (스마트기기용)-------------------------------------------------->
-	<div class="mobile_icon_hidden"><!--아이콘 숨기기-->
+	<div class="mobile_icon_hidden lodefadein"><!--아이콘 숨기기-->
 		<ul class="mobile_icon">
 			<li><a href="https://www.instagram.com/im_loys/" target="_blank"><img src="../../../img/main/icon/instar.png" alt="인스타"></a></li>
 			<li><a href="https://www.youtube.com/channel/UCQyVxrcSj2KSl7DJkI3mvhA" target="_blank"><img src="../../../img/main/icon/youtube.png" alt="유튜브"></a></li>
@@ -166,6 +173,12 @@
 	<!--액션 JS-->
 	<script src="../../../js/00_0-scrollbar.js"></script>	
 	<script src="../../../js/00_2-menubar_action.js"></script>	
+
+	<!--뒤로가기 시 제자리 JS-->
+	<script src="js/00_5-place.js"></script>	
+
+	<!--전체 스크롤업 JS-->
+	<script src="../../../js/scrollup.js"></script>
 
 </body>
 </html>
