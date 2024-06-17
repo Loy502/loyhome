@@ -41,8 +41,15 @@
     <!--디테일 페이지-->
     <link rel="stylesheet" type="text/css" href="../css/page.css">
 
+
+    <!--페이지 로드 페이드인 css-->
+    <link rel="stylesheet" type="text/css" href="../../../css/lodefaedin.css">
+
+    <!--전체 스크롤 페이드인 css-->
+    <link rel="stylesheet" type="text/css" href="../../../css/scrollup.css">
+
     <!--반응형 아이프레임 CSS-------------------------------------------------->
-    
+
     <link rel="stylesheet" type="text/css" href="css/iframe.css">
 
 
@@ -54,7 +61,7 @@
     <!--01헤더 섹션-------------------------------------------------->
     <!--로고 바-->
     <header class="logo_bar"> <!--무지 상하단 여백-->
-        <div class="logo_background"> <!--텍스트 타이트-->
+        <div class="logo_background lodefadein"> <!--텍스트 타이트-->
             <h1 id="wide" class="logo_wide"> <!--너비 1440px-->
                 <a href="../../../index.html">
                     <img class="logo" src="../../../img/main/logo/logo_symbol(200).svg" alt="메인 로고">
@@ -87,7 +94,7 @@
     </header>
 
     <!--메뉴바-->
-    <nav class="navbar_down">
+    <nav class="navbar_down lodefadein">
         <div class="gnb">
             <div class="menu menu1"><a href="../../../html/02-web.html">웹디자인</a></div>
             <div class="menu menu2"><a href="../../../html/03-product.html">상품페이지</a></div>
@@ -104,7 +111,7 @@
         <!--공백-->
         <div class="space1"></div>
         <!--썸네일 섹션-->
-        <section class="thumbnail_wrap">
+        <section class="thumbnail_wrap scrollup">
             <img src="https://github.com/loy-502/loyhome2/blob/main/img/%EB%AC%B4%EB%B9%84%EC%8A%A4%ED%83%80/%5B%ED%98%B8%ED%98%B8%EB%A6%AC%5D%EB%AC%B4%EB%B9%84%EC%8A%A4%ED%83%80%EC%8D%B8%EB%84%A4%EC%9D%BC(590).png?raw=true"
                 alt="썸네일">
             <ul class="work">
@@ -131,7 +138,7 @@
         </section>
         <!--공백-->
         <div class="space1"></div>
-        <hr class="line1">
+        <hr class="line1 scrollup">
 
 
 
@@ -141,7 +148,7 @@
 
 
         <section class="page">
-            <div class="iframeContainer iframe16To9">
+            <div class="iframeContainer iframe16To9 scrollup">
                 <img src="../03product/img/1000px.png">
                 <img src="../03product/img/1000px.png">
                 <img src="../03product/img/1000px.png">
@@ -163,8 +170,9 @@
                 <img src="../03product/img/1000px.png">
                 <img src="../03product/img/1000px.png">
                 <img src="../03product/img/600px.png">
-                
-                <iframe src="https://loy5025.github.io/loyhome3/" noresize scrolling='no' marginwidth="0" marginheight="0"></iframe>
+
+                <iframe src="https://loy5025.github.io/loyhome3/" noresize scrolling='no' marginwidth="0"
+                    marginheight="0"></iframe>
             </div>
         </section>
 
@@ -178,11 +186,11 @@
 
 
     <!--08 푸터 섹션-------------------------------------------------->
-    <footer class="footer">
+    <footer class="footer scrollup">
         <p>copyright&copy; 2022.'THIS IS LOY WORLD' DESIGN HOME ALL RIGHTS RESERVED.</p>
     </footer>
     <!--09픽스 아이콘 (스마트기기용)-------------------------------------------------->
-    <div class="mobile_icon_hidden"><!--아이콘 숨기기-->
+    <div class="mobile_icon_hidden lodefadein"><!--아이콘 숨기기-->
         <ul class="mobile_icon">
             <li><a href="https://www.instagram.com/im_loys/" target="_blank"><img
                         src="../../../img/main/icon/instar.png" alt="인스타"></a></li>
@@ -201,6 +209,12 @@
     <!--액션 JS-->
     <script src="../../../js/00_0-scrollbar.js"></script>
     <script src="../../../js/00_2-menubar_action.js"></script>
+
+    <!--뒤로가기 시 제자리 js-->
+    <script src="../../../js/00_5-place.js"></script>
+
+    <!--전체 스크롤 페이드인 js-->
+    <script src="../../../js/scrollup.js"></script>
 
 
 
