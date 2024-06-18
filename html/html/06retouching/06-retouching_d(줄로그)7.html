@@ -41,6 +41,13 @@
 <link rel="stylesheet" type="text/css" href="css/mouseclick.css">
 <!--전환 확인 버튼-->
 <link rel="stylesheet" type="text/css" href="css/button.css">
+
+
+<!--페이지 로드 페이드인 css-->
+<link rel="stylesheet" type="text/css" href="../../../css/lodefaedin.css">
+
+<!--전체 스크롤 페이드인 css-->
+<link rel="stylesheet" type="text/css" href="../../../css/scrollup.css">
 </head>
 <body>
 
@@ -49,7 +56,7 @@
 	<!--01헤더 섹션-------------------------------------------------->
 	<!--로고 바-->
 	<header class="logo_bar"> <!--무지 상하단 여백-->
-		<div class="logo_background"> <!--텍스트 타이트-->
+		<div class="logo_background lodefadein"> <!--텍스트 타이트-->
 			<h1 id="wide" class="logo_wide"> <!--너비 1440px-->
 				<a href="../../../index.html">
 					<img class="logo" src="../../../img/main/logo/logo_symbol(200).svg" alt="메인 로고">
@@ -82,7 +89,7 @@
 	</header> 
 
 	<!--메뉴바-->
-	<nav class="navbar_down">
+	<nav class="navbar_down lodefadein">
 		<div class="gnb">
 			<div class="menu menu1"><a href="../../../html/02-web.html">웹디자인</a></div>
 			<div class="menu menu2"><a href="../../../html/03-product.html">상품페이지</a></div>
@@ -99,7 +106,7 @@
 		<!--공백-->
 		<div class="space1"></div>
         <!--썸네일 섹션-->
-        <section class="thumbnail_wrap">
+        <section class="thumbnail_wrap scrollup">
             <img src="img/줄로그/7/썸넬(600).jpg" alt="썸네일">
             <ul class="work">
                 <li class="title">
@@ -121,18 +128,18 @@
         </section>
         <!--공백-->
 		<div class="space1"></div>
-        <hr class="line1">
+        <hr class="line1 scrollup">
 		<!--공백-->
 		<div class="space"></div>
         <!--마우스 오버 안내-->
 		<div id="retouching_title_wrap" class="title_all">
 			<!--메인 타이틀-->
-			<div class="main_title">이미지를 클릭 or 터치해 보세요.</div>
+			<div class="main_title scrollup">이미지를 클릭 or 터치해 보세요.</div>
 		</div>
 		<!--공백-->
 		<div class="space1"></div>
         <section class="page">
-			<div class="click">
+			<div class="click scrollup">
 				<div class="retouching_click">
 					<img class="resize" src="img/줄로그/7/[메인]IMG_5319~photo(색보정).jpg">
 					<button class="retouching">보정본</button>
@@ -147,7 +154,7 @@
 
 
 
-			<div class="click">
+			<div class="click scrollup">
 				<div class="retouching_click1">
 					<img class="resize" src="img/줄로그/7/IMG_5311~photo(색보정).jpg">
 					<button class="retouching">보정본</button>
@@ -162,7 +169,7 @@
 
 
 
-			<div class="click">
+			<div class="click scrollup">
 				<div class="retouching_click2">
 					<img class="resize" src="img/줄로그/7/IMG_5315~photo(색보정).jpg">
 					<button class="retouching">보정본</button>
@@ -184,11 +191,11 @@
 
 	
 	<!--08 푸터 섹션-------------------------------------------------->
-	<footer class="footer">
-			<p>copyright&copy; 2022.'THIS IS LOY WORLD' DESIGN HOME ALL RIGHTS RESERVED.</p>
+	<footer class="footer scrollup">
+			<p>copyright&copy; 2024.'THIS IS LOY WORLD' DESIGN HOME ALL RIGHTS RESERVED.</p>
 	</footer>
 	<!--09픽스 아이콘 (스마트기기용)-------------------------------------------------->
-	<div class="mobile_icon_hidden"><!--아이콘 숨기기-->
+	<div class="mobile_icon_hidden lodefadein"><!--아이콘 숨기기-->
 		<ul class="mobile_icon">
 			<li><a href="https://www.instagram.com/im_loys/" target="_blank"><img src="../../../img/main/icon/instar.png" alt="인스타"></a></li>
 			<li><a href="https://www.youtube.com/channel/UCQyVxrcSj2KSl7DJkI3mvhA" target="_blank"><img src="../../../img/main/icon/youtube.png" alt="유튜브"></a></li>
@@ -205,6 +212,12 @@
 	<script src="../../../js/00_0-scrollbar.js"></script>	
 	<script src="../../../js/00_2-menubar_action.js"></script>	
 	<script src="js/click.js"></script>	
+
+	<!--뒤로가기 시 제자리 js-->
+	<script src="../../../js/00_5-place.js"></script>
+
+	<!--전체 스크롤 페이드인 js-->
+	<script src="../../../js/scrollup.js"></script>	
 
 </body>
 </html>
