@@ -1,8 +1,9 @@
 //팝업 자동 띄우기	https://tyson.tistory.com/90 참고
 jQuery(document).ready(function() {
-	$('.').show();
+	$('popup_bg').show();
 });
 
+/*
 //Esc로 팝업창을 닫기
 window.onkeyup = function(e) {
 	var key = e.keyCode ? e.keyCode : e.which;
@@ -12,6 +13,7 @@ window.onkeyup = function(e) {
 		$("body").css({overflow:''}).unbind('popup_bg');
 	}
 }
+*/
 
 /* 외부영역 클릭시 팝업 닫기 
 $(document).mouseup(function (e){
