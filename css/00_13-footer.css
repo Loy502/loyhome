@@ -4,6 +4,8 @@
 .footer {
 	height: 100px;
 	min-width: 280px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	letter-spacing: 0.5px;
 	/* 자간 */
 	border-top: 1px solid rgb(230, 230, 230);
@@ -19,6 +21,7 @@
 	/*12px*/
 	text-align: center;
 	color: #747474;
+	line-height: normal;
 }
 
 .footer .phone,
@@ -29,7 +32,13 @@
 }
 
 .email a {
-	color: hotpink;
+	color: green;
+}
+
+.phone a {
+	color: green;
+	pointer-events: none;
+	cursor: auto;
 }
 
 
@@ -59,8 +68,9 @@
 
 	/*07 푸터 섹션--------------------------------------------------*/
 	.footer p {
-		font-size: 1.5278vw;
-		/*22px*/
+		font-size: 0.75rem;
+		/*12px*/
+		padding: 0 40px;
 	}
 
 
