@@ -11,17 +11,6 @@ window.addEventListener('pagehide', function(e){
 });
 */
 
-/*
-// location을 사용하는 방법 --- 새로고침 시 제자리
-location.reload();
-location.replace(location.href);
-location.href = location.href;
-
-// history를 사용하는 방법
-history.go(0);
-/* 출처: https://7942yongdae.tistory.com/53 [개발자 일지:티스토리]
-*/
-
 /**
 * 스크롤 기억 설정2
 * 스크롤이 움직일때마다 값을 sessionStorage에 넣어줌 --- 대부분의 pc 브라우저는 자동으로 지정됨
