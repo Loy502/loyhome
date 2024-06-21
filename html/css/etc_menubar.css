@@ -1,14 +1,14 @@
 @charset "utf-8";
 
+.menu3 a{
+    color: #fff;
+}
 /* 모바일CSS----------------------------------------------------------------------------------------------------
 	480-281px (반응형)
 	리스트 2개 씩
 	*/
     @media all and (max-width: 480px){
         .gnb div:nth-child(3){
-            background: #262626;
-        }
-        .menu3 a{
-            color: #fff;
+            background: #202020;
         }
     }
