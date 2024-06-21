@@ -17,14 +17,22 @@
     width: 140px;
     height: 50px;
     border-radius: 10px; /* %로 하면 일그러짐 */
-    border: 1.2px;
-    border-style: solid;
+    background-color: rgb(216, 196, 177);
+    border: none;
+    /* border-style: solid;
     border-color: #cacaca;
-    background: transparent;
+    background: transparent; */
     font-family: 'GmarketSansLight';
-    font-size: 0.875rem; /*14px*/
+    font-size: 1.125rem; /*18px*/
     opacity: 70%;
     cursor: pointer;
+    box-shadow: 0px 2px 5px/*블러*/ /*-2px그림자 크기 줄이기*/ rgb(214, 206, 200);
+}
+
+.web_more a {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 0.5px;
+    filter: drop-shadow(0px 0px 2px #413a33); /*그림자*/
 }
 
 
@@ -55,7 +63,7 @@
 .more_button{
     width: 130px;
     height: 46px;
-	font-size: 0.75rem; /*12px*/
+	font-size: 1rem; /*16px*/
 }
 }
 
@@ -90,7 +98,7 @@
 .more_button{
     width: 110px;
     height: 42px;
-	font-size: 0.688rem; /*11px*/
+	font-size: 0.75rem; /*12px*/
 }
 }
 

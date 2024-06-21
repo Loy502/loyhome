@@ -41,7 +41,7 @@ padding: 0;
 border: 0;
 list-style: none; /*리스트 속성 초기화*/
 font: inherit; /*속성 상속*/
-color: #262626; /*폰트 기본 컬러*/
+color: #000000; /*폰트 기본 컬러*/
 vertical-align: baseline; /*인라인 요소 상대적 수직 정렬 : 텍스트 기준선 or 마진 끝을 기준으로 맞춤 */
 background:transparent;
 }

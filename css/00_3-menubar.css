@@ -22,9 +22,10 @@
 	-moz-backdrop-filter: blur(5px);
 	-o-backdrop-filter: blur(5px);
     
-	background: rgba(255, 255, 255, 0.65);    /*배경만 투명도 지정_맨 뒤 숫자_!!아주 중요!!*/	
-    border-top: 1px solid rgb(230, 230, 230);
-    border-bottom: 1px solid rgb(230, 230, 230);
+	background: rgba(22, 22, 22, 0.85);    /*배경만 투명도 지정_맨 뒤 숫자_!!아주 중요!!*/	
+    box-shadow: 4px 0px 5px/*블러*/ /*-2px그림자 크기 줄이기*/ rgb(17, 17, 17);
+    /* border-top: 1px solid rgb(99, 98, 98); */
+    /* border-bottom: 1px solid rgb(99, 98, 98); */
 
     transform: All 0.9s ease;
     -webkit-transition: All 0.9s ease;
@@ -39,9 +40,10 @@
     width: 100%;
     min-width: 280px;
     display: block;
-    background: rgba(255, 255, 255, 0.85);    /*배경만 투명도 지정_맨 뒤 숫자_!!아주 중요!!*/
-    border-top: 1px solid rgb(230, 230, 230);
-    border-bottom: 1px solid rgb(230, 230, 230);
+	background: rgba(22, 22, 22, 0.85);    /*배경만 투명도 지정_맨 뒤 숫자_!!아주 중요!!*/
+    box-shadow: 4px 0px 5px/*블러*/ /*-2px그림자 크기 줄이기*/ rgb(17, 17, 17);
+    /* border-top: 1px solid rgb(99, 98, 98); */
+    /* border-bottom: 1px solid rgb(99, 98, 98); */
 
     transform: All 0.9s ease;
     -webkit-transition: All 0.9s ease;
@@ -60,15 +62,19 @@
 }
 .gnb div{
     width: 16.66666666666667%;
-    border-right: 1px solid rgb(230, 230, 230);
-    -webkit-text-stroke-width: 0.3px; /* 텍스트 외곽선 */
-    -webkit-text-stroke-color: #262626;
+    border-right: 1px solid rgb(75, 75, 75);
+    /* -webkit-text-stroke-width: 0.1px; /* 텍스트 외곽선 */
+    /* -webkit-text-stroke-color: #000000; */
     text-align: center;
     box-sizing: border-box;
     display: block;
 }
 .gnb div:last-child{
     border-right: none;
+}
+
+.menu a {
+    color: rgb(207, 194, 183);
 }
 
 
@@ -135,7 +141,7 @@
     height: 40px;
 }
 .gnb div{
-    -webkit-text-stroke-width: 0.2px; /* 텍스트 외곽선 */
+    /* -webkit-text-stroke-width: 0.1px; /* 텍스트 외곽선 */
 }
 .menu a{
     font-size: 0.625rem; /*10px;*/
@@ -178,7 +184,7 @@
     border-right: none;
 }
 .menu1, .menu2, .menu3{
-    border-bottom: 1px solid rgb(230, 230, 230);
+    border-bottom: 1px solid rgb(75, 75, 75);
 }
 }
 
