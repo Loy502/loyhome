@@ -42,19 +42,19 @@
 /*더보기 버튼*/
 .sub_button{
     position: absolute;
-    top: 91%;
+    top: 90%;
     right: 50%;
     transform: translate(50%, 0);
 }
 .sub_button button{
     font-family: 'GmarketSansLight';
-    width: 6.25rem; /*100px;*/
-    height: 2.5rem;    /*40px;*/
+    width: 7.5rem; /*120px;*/
+    height: 3.125rem;    /*50px;*/
     border-radius: 50px;
-    border: 1px;
+    border: 2px;
     border-style: solid;
-    border-color: #fff;
-    box-shadow: 0px 0px 10px/*블러*/ /*-2px그림자 크기 줄이기*/ rgb(175, 175, 175);
+    border-color: rgb(235, 229, 225);
+    box-shadow: 0px 0px 10px/*블러*/ /*-2px그림자 크기 줄이기*/ rgb(158, 158, 158);
     background: transparent;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -62,17 +62,17 @@
     -o-backdrop-filter: blur(5px);
 }
 .sub_button a{
-    color: #fff;
-
+    color: rgb(235, 229, 225);
+    font-size: 16px;
     -webkit-text-stroke-width: 0.2px;
     -moz-text-stroke-width: 0.2px;
     -o-text-stroke-width: 0.2px;
     
-    -webkit-text-stroke-color: #fff;
+    /* -webkit-text-stroke-color: #fff;
     -moz-text-stroke-color: #fff;
-    -o-text-stroke-color: #fff;
+    -o-text-stroke-color: #fff; */
 
-    /* text-shadow: 0.1px 0.1px 2px/*블러*//* -2px그림자 크기 줄이기*/ /* rgb(39, 39, 39); */
+    text-shadow: 0px 0px 10px/*블러*/ /*-2px그림자 크기 줄이기*/rgb(0, 0, 0);
     /* filter:shadow(color=rgb(39, 39, 39), direction=135, strength=2); zoom:1; /* 익스플로러 그림자 */
 }
 
@@ -107,7 +107,12 @@
 /*
 /*더보기 버튼*/
 .sub_button{
-	top: 90%;
+	top: 89.8%;
+}
+.sub_button button{
+    font-family: 'GmarketSansLight';
+    width: 6.875rem; /*110px;*/
+    height: 2.75rem;    /*44px;*/
 }
 }
 
@@ -149,10 +154,15 @@
 .sub_button{
     top: 75%;
 }
+
+.sub_button a {
+    font-size: 3.1250vw;    /* 40px */
+    color: rgb(243, 238, 235);
+    text-shadow: 0px 1px 8px/*블러*/ /*-2px그림자 크기 줄이기*/rgb(0, 0, 0);
+}
 .sub_button button{
-    width: 14.044943820224718vw; /*200px;*/
-    height: 5.617977528089888vw;    /*80px;*/
-    font-size: 1.6853932584269662vw;    /* 24px */
+    width: 23.4375vw; /*300px;*/
+    height: 9.3750vw;    /*100px;*/
 }
 }
 
@@ -202,12 +212,7 @@
 }
 /*
 /*더보기 버튼*/
-.sub_button button{
-    width: 66px;
-    height: 26.5px;
 }
-}
-
 
 /* 모바일CSS----------------------------------------------------------------------------------------------------
 	280px (min-withd 280px 고정)
@@ -239,7 +244,7 @@
 /*
 /*더보기 버튼*/
 .sub_button button{
-    width: 60px;
-    height: 22px;
+    width: 64px;
+    height: 26px;
 }
 }
