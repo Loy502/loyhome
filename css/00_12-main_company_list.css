@@ -9,6 +9,7 @@
     margin-right: 10px;
     display: flex;
     flex-wrap: wrap;
+    font-size: 16px;
 
 }
 .company_list li{
@@ -73,7 +74,7 @@
     margin-bottom: 30px;
 }
 .company_list li{
-    font-size: 0.875rem; /*14px*/
+    font-size: 14px;
 }
 }
 
@@ -90,7 +91,7 @@
     margin-bottom: 20px;
 }
 .company_list li{
-    font-size: 0.75rem; /*12px*/
+    font-size: 13px;
 }
 }
 
@@ -109,7 +110,7 @@
 	margin-right: 5px;
 }
 .company_list li{
-    font-size: 0.688rem; /*11px*/
+    font-size: 12px;
 }
 }
 
