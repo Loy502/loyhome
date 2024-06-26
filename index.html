@@ -54,6 +54,8 @@
 	<link rel="stylesheet" type="text/css" href="css/00_14-side_icon.css">
 	<!--레이어 팝업 CSS-->
 	<link rel="stylesheet" type="text/css" href="css/popup.css">
+	<!--자기소개서 모달창 CSS-->
+	<link rel="stylesheet" type="text/css" href="css/aboutme.css">
 
 
 	<!--리스트 항목 강조 어트렉션 CSS-->
@@ -126,7 +128,7 @@
 			<!--스와이프-->
 			<div class="main_all">
 				<div class="swiper swiper1">
-					<div class="swiper-wrapper swiper-wrapper1">
+					<div id="openModalPop" class="swiper-wrapper swiper-wrapper1">
 						<div class="swiper-slide swiper-slide1"><img src="img/main/banner/main01_banner_pc.png"
 								alt="슬라이드1"></div>
 						<div class="swiper-slide swiper-slide1"><img src="img/main/banner/main02_banner_pc.png"
@@ -233,7 +235,7 @@
 								alt="썸네일"></li>
 						<li class="text text1">봄맞이 온라인 네일 박람회 UP To 60%</li>
 						<li class="text text2">오늘부터 모든 날이 설렐
-								거야.</li>
+							거야.</li>
 						<li class="text text3">쇼미</li>
 						<li class="text text4">[SNS 카드 뉴스]</li>
 					</a>
@@ -303,8 +305,8 @@
 								alt="썸네일"></li>
 						<li class="text text1">v-moodㅣ빈티지한 분위기에 쇼미의 감성을 더한 클래식한 깊이감</li>
 						<li class="text text2">놀라운 색감을
-								영상으로
-								확인하세요.</li>
+							영상으로
+							확인하세요.</li>
 						<li class="text text3">쇼미</li>
 						<li class="text text4">[SNS 카드 뉴스 & 릴스 영상]</li>
 					</a>
@@ -332,7 +334,7 @@
 						</li>
 						<li class="text text1">금욜마다 어려지는 동안 프로젝트</li>
 						<li class="text text2">YOUNGER DAY 50%
-								SALE</li>
+							SALE</li>
 						<li class="text text3">핑크하트</li>
 						<li class="text text4">[이벤트 페이지]</li>
 					</a>
@@ -343,7 +345,7 @@
 								alt="썸네일"></li>
 						<li class="text text1">제 이름을 찾아주세요</li>
 						<li class="text text2">따끈따끈한 신상 아이들의 이름 짓기
-								프로젝트</li>
+							프로젝트</li>
 						<li class="text text3">핑크하트</li>
 						<li class="text text4">[이벤트 페이지]</li>
 					</a>
@@ -354,8 +356,8 @@
 						</li>
 						<li class="text text1">THANK YOU FOR ALL 사은감사제</li>
 						<li class="text text2">감사의 마음을 담아 사은품을
-								증정해
-								드립니다.</li>
+							증정해
+							드립니다.</li>
 						<li class="text text3">줄로그</li>
 						<li class="text text4">[이벤트 페이지]</li>
 					</a>
@@ -1042,6 +1044,23 @@
 
 
 
+	
+	<!--11 자기소개서 모달창 섹션-------------------------------------------------->
+	<div id="modal">
+	</div>
+	<div id="banner_online">
+		<div class="pop_content">
+			<!--자기소개서 이미지-->
+			<img
+				src="https://github.com/loy5025/loyhome3/blob/main/img/aboutme/%5Bloy%5D%EC%9E%90%EC%86%8C%EC%84%9C.png?raw=true">
+			<!--자기소개서 닫기-->
+			<a id="close_button" style="cursor: pointer;" href="javascript:;" onclick="closeWin();" alt="닫기">✖</a>
+		</div>
+	</div>
+
+
+
+
 
 	<!--제이쿼리-------------------------------------------------->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -1061,6 +1080,8 @@
 
 	<!--레이어 팝업 JS-->
 	<script src="js/popup.js"></script>
+	<!--자기소개서 모달창 JS-->
+	<script src="js/aboutme-popup.js"></script>
 
 	<!--전체 스크롤업 JS-->
 	<script src="js/scrollup.js"></script>
