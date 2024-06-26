@@ -30,7 +30,7 @@
 
     max-width: 600px;
     margin: auto;
-    top: 0;
+    bottom: -7%;
 
     transform: All 0.9s ease;
     -webkit-transition: All 0.9s ease;
