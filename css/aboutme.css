@@ -30,7 +30,7 @@
 
     max-width: 600px;
     margin: auto;
-    bottom: -7%;
+    bottom: -4%;
 
     transform: All 0.9s ease;
     -webkit-transition: All 0.9s ease;
@@ -80,6 +80,7 @@
     .pop_content img {
         border-radius: 10.4167vw;
         /*50px*/
+        bottom: -20%;
     }
 
     #close_button {
