@@ -1,0 +1,93 @@
+@charset utf-8;
+
+#openModalPop {
+    cursor: pointer;
+}
+
+/* 참고 링크 - https://bbo-blog.tistory.com/29 */
+#banner_online {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    z-index: 999999;
+    display: none;
+    position: fixed;
+    min-width: 280px;
+
+
+    margin: auto;
+    user-select: none;
+}
+
+
+.pop_content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50px;
+
+    max-width: 600px;
+    margin: auto;
+    top: 5%;
+
+    transform: All 0.9s ease;
+    -webkit-transition: All 0.9s ease;
+    -moz-transform: All 0.9s ease;
+    -o-transition: All 0.9s ease;
+}
+
+.pop_content img {
+    border-radius: 50px;
+}
+
+#close_button {
+    position: absolute;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.875rem;
+    /*30px*/
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration-line: none;
+    bottom: 30px;
+    right: 30px;
+}
+
+#modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+}
+
+
+
+/* 모바일CSS----------------------------------------------------------------------------------------------------
+	480-281px (반응형)
+	*/
+
+@media all and (max-width: 480px) {
+
+
+    .pop_content,
+    .pop_content img {
+        border-radius: 10.4167vw;
+        /*50px*/
+    }
+
+    #close_button {
+        font-size: 6.2500vw;
+        /*30px*/
+        bottom: 6.2500vw;
+        /*30px*/
+        right: 6.2500vw;
+        /*30px*/
+    }
+}
