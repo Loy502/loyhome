@@ -1,73 +1,161 @@
 @charset utf-8;
 
+
+
 #openModalPop {
     cursor: pointer;
 }
 
+
+
 /* 참고 링크 - https://bbo-blog.tistory.com/29 */
 #banner_online {
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     z-index: 999999;
-    display: none;
     position: fixed;
+    display: none;
     min-width: 280px;
-
-
-    margin: auto;
-    user-select: none;
 }
 
 
-.pop_content {
+
+.aboutme {
     display: flex;
     position: relative;
-    flex-direction: column;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 50px;
 
-    max-width: 600px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    bottom: -4%;
+
+    width: 100vw;
+    height: 100vh;
+
+    min-width: 280px;
+}
+
+
+
+.pop_content {
+    position: relative;
+    margin: 20px 20px;
+    border-radius: 40px;
 
     transform: All 0.9s ease;
     -webkit-transition: All 0.9s ease;
     -moz-transform: All 0.9s ease;
     -o-transition: All 0.9s ease;
+
+    overflow: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera*/
 }
 
 .pop_content img {
-    border-radius: 50px;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-width: 240px;
+    max-width: 1000px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #close_button {
     position: absolute;
     cursor: pointer;
     color: #fff;
-    font-size: 1.875rem;
-    /*30px*/
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 50px;
     text-decoration-line: none;
-    bottom: 30px;
-    right: 30px;
-}
-
-#modal {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    top: 0;
-    left: 0;
-    z-index: 99;
-    display: none;
+    top: 24px;
+    right: 24px;
 }
 
 
+
+/* 데스크탑/노트북CSS----------------------------------------------------------------------------------------------------
+	1280-1025px (브라우저)
+	*/
+@media all and (max-width: 1280px) {
+
+
+    .pop_content,
+    .pop_content img {
+        border-radius: 3.5938vw;
+        /*46px*/
+    }
+
+    #close_button {
+        font-size: 46px;
+        right: 1.8750vw;
+        /*24px*/
+        top: 1.8750vw;
+        /*24px*/
+    }
+}
+
+
+
+/* 태블릿CSS----------------------------------------------------------------------------------------------------
+	1024-768px (반응형)
+	*/
+@media all and (max-width: 1024px) {
+
+
+    .pop_content,
+    .pop_content img {
+        border-radius: 3.9063vw;
+        /*40px*/
+    }
+    
+
+    #close_button {
+        font-size: 3.9063vw;
+        /*40px*/
+        right: 2.3438vw;
+        /*24px*/
+        top: 2.3438vw;
+        /*24px*/
+    }
+}
+
+
+
+
+/* 태블릿/모바일_가로CSS----------------------------------------------------------------------------------------------------
+	767-481px (반응형)
+	*/
+@media all and (max-width: 767px) {
+
+
+    .pop_content,
+    .pop_content img {
+        border-radius: 4.6936vw;
+        /*36px*/
+    }
+    
+
+    #close_button {
+        font-size: 3.9063vw;
+        /*40px*/
+        right: 3.1291vw;
+        /*24px*/
+        top: 3.1291vw;
+        /*24px*/
+    }
+    
+}
 
 /* 모바일CSS----------------------------------------------------------------------------------------------------
 	480-281px (반응형)
@@ -78,17 +166,33 @@
 
     .pop_content,
     .pop_content img {
-        border-radius: 10.4167vw;
-        /*50px*/
-        bottom: -16%;
+        border-radius: 6.2500vw;
+        /*30px*/
     }
 
     #close_button {
-        font-size: 6.2500vw;
-        /*30px*/
-        bottom: 6.2500vw;
-        /*30px*/
-        right: 6.2500vw;
-        /*30px*/
+        font-size: 4.1667vw;
+        /*20px*/
+        right: 4.1667vw;
+        /*20px*/
+        top: 4.1667vw;
+        /*20px*/
     }
+}
+
+
+
+/* 모바일CSS----------------------------------------------------------------------------------------------------
+	280px (min-withd 280px 고정)
+	*/
+	
+@media all and (max-width: 280px){
+
+
+    .pop_content,
+    .pop_content img {
+        border-radius: 7.1429vw;
+        /*20px*/
+    }
+
 }
