@@ -34,3 +34,11 @@ function savedScrollTo() {
         }
     }
 };
+
+
+/**
+ * 새로고침 시 스크롤 초기화 - 출처 - https://hongpage.kr/136 [홍페이지 HONGPAGE:티스토리]
+$(function(){
+    $("html, body").animate({ scrollTop: 0 }, "fast"); 
+});
+ */
