@@ -51,7 +51,7 @@
 
 .list_item .text2 {
     font-size: 18px;
-    color: rgb(52, 100, 21);
+    color: rgb(71, 126, 34);
     -webkit-text-stroke-width: 0.4px;
 }
 
@@ -63,7 +63,7 @@
 
 .list_item .text4 {
     font-size: 16px;
-    color: rgb(53, 51, 49);
+    color: rgb(75, 73, 72);
     -webkit-text-stroke-width: 0.1px;
 }
 
@@ -131,6 +131,8 @@
     .list_item .text {
         margin-bottom: 6px;
         line-height: 1.12; /* 행간 */
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .list_item .text1 {

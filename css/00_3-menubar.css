@@ -27,10 +27,10 @@
     /* border-top: 1px solid rgb(99, 98, 98); */
     /* border-bottom: 1px solid rgb(99, 98, 98); */
 
-    transform: All 0.9s ease;
-    -webkit-transition: All 0.9s ease;
-    -moz-transform: All 0.9s ease;
-    -o-transition: All 0.9s ease;
+    transform: All 0.1s ease;
+    -webkit-transition: All 0.1s ease;
+    -moz-transform: All 0.1s ease;
+    -o-transition: All 0.1s ease;
 
 }
 
@@ -45,10 +45,10 @@
     /* border-top: 1px solid rgb(99, 98, 98); */
     /* border-bottom: 1px solid rgb(99, 98, 98); */
 
-    transform: All 0.9s ease;
-    -webkit-transition: All 0.9s ease;
-    -moz-transform: All 0.9s ease;
-    -o-transition: All 0.9s ease;
+    transform: All 0.1s ease;
+    -webkit-transition: All 0.1s ease;
+    -moz-transform: All 0.1s ease;
+    -o-transition: All 0.1s ease;
 }
 
 .gnb{

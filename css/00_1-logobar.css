@@ -1,69 +1,94 @@
 @charset "utf-8";
+
 /* 데스크탑CSS----------------------------------------------------------------------------------------------------
-	1440-1281px (브라우저)
+	1440-1281px (브라우저-반고정)
 	배너 공간 (1440px)
 	리스트 1줄 = 4개
 	*/
 /*01 헤더 섹션--------------------------------------------------*/
-.header{
+.header {
 	position: relative;
 }
-#wide{
+
+#wide {
 	width: 100%;
 	max-width: 1440px;
 	margin: auto;
 	position: relative;
 }
+
 /*로고바------------------------------*/
-.logo_bar{
+.logo_bar {
 	top: 0;
-    width: 100%;
+	width: 100%;
 	/* margin: 30px 0; */
 	z-index: 9999;
 	position: sticky;
-	transform: All 0.9s ease;
-    -webkit-transition: All 0.9s ease;
-    -moz-transform: All 0.9s ease;
-    -o-transition: All 0.9s ease;
-	background: rgba(22, 22, 22, 0.85);    /*배경만 투명도 지정_맨 뒤 숫자_!!아주 중요!!*/	
+	background: rgba(22, 22, 22, 0.85);
+	/*배경만 투명도 지정_맨 뒤 숫자_!!아주 중요!!*/
 }
-.logo_background{
+
+.logo_background {
 	width: 100%;
-	min-width: 280px;
+	min-width: 1440px;
 	padding: 15px 0;
 	display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(5px); /*블러 처리*/
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(5px);
+	/*블러 처리*/
 	-webkit-backdrop-filter: blur(5px);
 	-moz-backdrop-filter: blur(5px);
 	-o-backdrop-filter: blur(5px);
-	background: transparent;   /*배경만 투명도 지정_맨 뒤 숫자_!!아주 중요!!*/	
+	background: transparent;
+	/*배경만 투명도 지정_맨 뒤 숫자_!!아주 중요!!*/
 }
+
 /*로고------------------------------*/
-.logo_wide{
-    display: flex;
+.logo_wide {
+	display: flex;
 	justify-content: center;
+	min-width: 1440px;
 }
-.logo_wide .logo{
+
+.logo_wide .logo {
 	height: 50px;
 	display: block;
+	transform: All 0.3s ease;
+	-webkit-transition: All 0.3s ease;
+	-moz-transform: All 0.3s ease;
+	-o-transition: All 0.3s ease;
 }
+
 /*로고바 아이콘------------------------------*/
 /*메뉴바------------------------------*/
+.navbar_down,
+.gnb {
+	min-width: 1440px;
+}
+
+.gnb {
+	transform: All 0.3s ease;
+	-webkit-transition: All 0.3s ease;
+	-moz-transform: All 0.3s ease;
+	-o-transition: All 0.3s ease;
+}
 
 
 /* 데스크탑/노트북CSS----------------------------------------------------------------------------------------------------
-	1280-1025px (브라우저)
+	1280px (브라우저-고정)
 	배너 공간 (1280px)
 	*/
-@media all and (max-width: 1280px){
+@media all and (max-width: 1280px) {
 
-/*01 헤더 섹션--------------------------------------------------*/
-/*로고바------------------------------*/
-/*로고------------------------------*/
-/*로고바 아이콘------------------------------*/
-/*메뉴바------------------------------*/
+	/*01 헤더 섹션--------------------------------------------------*/
+	/*로고바 & 메뉴바------------------------------*/
+	.logo_background,
+	.logo_wide,
+	.navbar_down,
+	.gnb {
+		min-width: 1280px;
+	}
 }
 
 
@@ -71,24 +96,35 @@
 	1024-768px (반응형)
 	메인 배너 / 서브 배너 분리
 	*/
-@media all and (max-width: 1024px){
+@media all and (max-width: 1024px) {
 
-/*01 헤더 섹션--------------------------------------------------*/
-/*로고바------------------------------*/
-.logo_bar{
-	/* margin: 20px 0; */
-}
-/*
+	/*01 헤더 섹션--------------------------------------------------*/
+	/*로고바 & 메뉴바------------------------------*/
+	.logo_background,
+	.logo_wide,
+	.navbar_down,
+	.gnb {
+		max-width: 1024px;
+		min-width: 768px;
+	}
+
+	/*로고------------------------------*/
+	.logo_bar {
+		/* margin: 20px 0; */
+	}
+
+	/*
 .logo_background{
 	padding: 8px 0;
 }
 */
-/*로고------------------------------*/
-.logo_wide .logo{
-	height: 44px;
-}
-/*로고바 아이콘------------------------------*/
-/*메뉴바------------------------------*/
+	/*로고------------------------------*/
+	.logo_wide .logo {
+		height: 44px;
+	}
+
+	/*로고바 아이콘------------------------------*/
+	/*메뉴바------------------------------*/
 }
 
 
@@ -96,25 +132,34 @@
 	767-481px (반응형)
 	리스트 1줄 = 3개
 	*/
-@media all and (max-width: 767px){
+@media all and (max-width: 767px) {
 
-/*01 헤더 섹션--------------------------------------------------*/
-/*로고바------------------------------*/
-/*로고------------------------------*/
-.logo_bar{
-	/* margin: 20px 0; */
-}
-/*
+	/*01 헤더 섹션--------------------------------------------------*/
+	/*로고바 & 메뉴바------------------------------*/
+	.logo_background,
+	.logo_wide,
+	.navbar_down,
+	.gnb {
+		max-width: 767px;
+		min-width: 481px;
+	}
+
+	/*로고------------------------------*/
+	.logo_bar {
+		/* margin: 20px 0; */
+	}
+
+	/*
 .logo_background{
 	padding: 5px 0;
 }
 */
-.logo_wide .logo{
-	height: 40px;
-}
-/*로고------------------------------*/
-/*로고바 아이콘------------------------------*/
-/*메뉴바------------------------------*/
+	.logo_wide .logo {
+		height: 40px;
+	}
+
+	/*로고------------------------------*/
+	/*로고바 아이콘------------------------------*/
 }
 
 
@@ -122,44 +167,63 @@
 	480-281px (반응형)
 	리스트 2개 씩
 	*/
-@media all and (max-width: 480px){
-/*01 헤더 섹션--------------------------------------------------*/
-/*로고바------------------------------*/
-/*로고------------------------------*/
-.logo_bar{
-	/* margin: 13px 0; */
-}
-/*
+@media all and (max-width: 480px) {
+
+	/*01 헤더 섹션--------------------------------------------------*/
+	/*로고바 & 메뉴바------------------------------*/
+	.logo_background,
+	.logo_wide,
+	.navbar_down,
+	.gnb {
+		max-width: 480px;
+		min-width: 281px;
+	}
+
+	/*로고------------------------------*/
+	.logo_bar {
+		/* margin: 13px 0; */
+	}
+
+	/*
 .logo_background{
 	padding: 8px 0;
 }
 */
-.logo_wide .logo{
-	height: 30px;
-}
-/*로고바 아이콘------------------------------*/
-/*메뉴바------------------------------*/
+	.logo_wide .logo {
+		height: 30px;
+	}
+
+	/*로고바 아이콘------------------------------*/
 }
 
 
 /* 모바일CSS----------------------------------------------------------------------------------------------------
 	280px (min-withd 280px 고정)
 	*/
-@media all and (max-width: 280px){
-/*01 헤더 섹션--------------------------------------------------*/
-/*로고바------------------------------*/
-/*로고------------------------------*/
-.logo_bar{
-	/* margin: 10px 0; */
-}
-/*
+@media all and (max-width: 280px) {
+
+	/*01 헤더 섹션--------------------------------------------------*/
+	/*로고바 & 메뉴바------------------------------*/
+	.logo_background,
+	.logo_wide,
+	.navbar_down,
+	.gnb {
+		min-width: 280px;
+	}
+
+	/*로고------------------------------*/
+	.logo_bar {
+		/* margin: 10px 0; */
+	}
+
+	/*
 .logo_background{
 	padding: 6px 0;
 }
 */
-.logo_wide .logo{
-	height: 24px;
-}
-/*로고바 아이콘------------------------------*/
-/*메뉴바------------------------------*/
+	.logo_wide .logo {
+		height: 24px;
+	}
+
+	/*로고바 아이콘------------------------------*/
 }

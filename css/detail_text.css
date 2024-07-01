@@ -2,9 +2,8 @@
 
 #detail_mutua {
     font-size: 24px;
-    /* 36px */
-    letter-spacing: -0.0273vw;
-    /* -0.7px - 자간 */
+    letter-spacing: -0.7px;
+    /* 자간 */
     -webkit-text-stroke-width: 0.7px;
     /* 텍스트 외곽선*/
     color: rgb(155, 121, 89);
@@ -13,41 +12,35 @@
 
 #detail_title {
     font-size: 36px;
-    /* 36px */
     -webkit-text-stroke-width: 1px;
     /* 텍스트 외곽선*/
     -webkit-text-stroke-color: rgb(0, 0, 0);
-    letter-spacing: -0.1vw;
-    /* -3px - 자간 */
+    letter-spacing: -3px;
+    /* 자간 */
 }
 
 .work .line {
-    margin-bottom: 1.3889vw;
-    /* 20px */
-
+    margin-bottom: 20px;
 }
 
 #history1 {
     font-size: 24px;
-    /* 24px */
     color: rgb(71, 126, 34);
     -webkit-text-stroke-width: 0.7px;
     /* 텍스트 외곽선*/
     -webkit-text-stroke-color: rgb(71, 126, 34);
-    letter-spacing: -0.0273vw;
-    /* -0.7px - 자간 */
-    margin-bottom: 0.6250vw;
-    /* 16px */
+    letter-spacing: -0.7px;
+    /* 자간 */
+    margin-bottom: 16px;
 }
 
 #history2 {
     font-size: 20px;
-    /* 20px */
     color: rgb(75, 73, 72);
     -webkit-text-stroke-width: 0.3px;
     -webkit-text-stroke-color: rgb(75, 73, 72);
-    letter-spacing: -0.0195vw;
-    /* -0.05px - 자간 */
+    letter-spacing: -0.05px;
+    /* 자간 */
 
 
 
@@ -55,9 +48,8 @@
 
 #detail_v_mutua {
     font-size: 30px;
-    /* 30px */
-    letter-spacing: -0.0273vw;
-    /* -0.7px - 자간 */
+    letter-spacing: -0.7px;
+    /* 자간 */
     -webkit-text-stroke-width: 0.7px;
     /* 텍스트 외곽선*/
     color: rgb(155, 121, 89);
@@ -66,45 +58,40 @@
 
 #detail_v_title {
     font-size: 36px;
-    /* 36px */
     -webkit-text-stroke-width: 1px;
     /* 텍스트 외곽선*/
     -webkit-text-stroke-color: rgb(0, 0, 0);
-    letter-spacing: -0.1vw;
-    /* -3px - 자간 */
+    letter-spacing: -3px;
+    /* 자간 */
 }
 
 #history1_v {
     font-size: 30px;
-    /* 30px */
     color: rgb(71, 126, 34);
     -webkit-text-stroke-width: 0.7px;
     /* 텍스트 외곽선*/
     -webkit-text-stroke-color: rgb(71, 126, 34);
-    letter-spacing: -0.0273vw;
-    /* -0.7px - 자간 */
-    margin-bottom: 0.6250vw;
-    /* 16px */
+    letter-spacing: -0.7px;
+    /* 자간 */
+    margin-bottom: 16px;
 }
 
 #history2_v {
     font-size: 24px;
-    /* 24px */
     color: rgb(75, 73, 72);
     -webkit-text-stroke-width: 0.3px;
     -webkit-text-stroke-color: rgb(75, 73, 72);
-    letter-spacing: -0.0195vw;
-    /* -0.05px - 자간 */
+    letter-spacing: -0.05px;
+    /* 자간 */
 }
 
 #history3_v {
     font-size: 20px;
-    /* 20px */
     color: rgb(75, 73, 72);
     -webkit-text-stroke-width: 0.3px;
     -webkit-text-stroke-color: rgb(75, 73, 72);
-    letter-spacing: -0.0195vw;
-    /* -0.05px - 자간 */
+    letter-spacing: -0.05px;
+    /* 자간 */
 }
 
 
@@ -112,93 +99,45 @@
 @media all and (max-width: 1280px) {
 
     #detail_mutua {
-        font-size: 1.8750vw;
-        /* 24px */
+        font-size: 24px;
     }
 
     #detail_title {
-        font-size: 2.8125vw;
-        /* 36px */
+        font-size: 36px;
     }
 
     #history1 {
-        font-size: 1.8750vw;
-        /* 24px */
+        font-size: 24px;
     }
 
     #history2 {
-        font-size: 1.5625vw;
-        /* 20px */
-    }
-
-
-
-    #detail_v_mutua, #history1_v {
-        font-size: 2.3438vw;
-        /* 30px */
-    }
-
-    #detail_v_title {
-        font-size: 2.8125vw;
-        /* 36px */
-    }
-
-    #history2_v {
-        font-size: 1.8750vw;
-        /* 24px */
-    }
-
-    #history3_v {
-        font-size: 1.5625vw;
-        /* 20px */
+        font-size: 20px;
     }
 }
 
 /* 태블릿/모바일_가로CSS----------------------------------------------------------------------------------------------------
-	767-481px (반응형)
+	1024-768px (반응형)
 	리스트 1줄 = 3개
 	*/
 @media all and (max-width: 1024px) {
 
     #detail_mutua {
-        font-size: 1.9531vw;
-        /* 20px */
-    }
-
-    #detail_title {
-        font-size: 2.9297vw;
-        /* 30px */
-    }
-
-    #history1 {
-        font-size: 1.9531vw;
-        /* 20px */
-    }
-
-    #history2 {
-        font-size: 1.5625vw;
-        /* 16px */
-    }
-
-
-
-    #detail_v_mutua, #history1_v {
         font-size: 2.3438vw;
-        /* 30px */
-    }
-
-    #detail_v_title {
-        font-size: 2.8125vw;
-        /* 36px */
-    }
-
-    #history2_v {
-        font-size: 1.8750vw;
         /* 24px */
     }
 
-    #history3_v {
-        font-size: 1.5625vw;
+    #detail_title {
+        font-size: 3.3203vw;
+        /* 34px */
+    }
+
+    #history1 {
+        font-size: 2.3438vw;
+        /* 24px */
+    }
+
+    #history2 {
+        font-size: 1.9531vw;
         /* 20px */
     }
 }
@@ -211,8 +150,8 @@
 @media all and (max-width: 767px) {
 
     #detail_mutua {
-        font-size: 3.6506vw;
-        /* 28px */
+        font-size: 4.9544vw;
+        /* 38px */
         margin: 0 1.9557vw;
         /* 15px */
         -webkit-text-stroke-width: 0.5px;
@@ -220,55 +159,31 @@
     }
 
     #detail_title {
-        font-size: 5.2151vw;
-        /* 40px */
-        margin: 0 1.9557vw;
-        /* 15px */
+        font-size: 5.7366vw;
+        /* 44px */
+        margin: 2.3468vw;
+        /* 18px */
     }
 
     .work .line {
-        margin-bottom: 2.8683vw;
-        /* 22px */
+        margin-bottom: 5.2151vw;
+        /* 40px */
         -webkit-text-stroke-width: 0.5px;
         /* 텍스트 외곽선*/
     }
 
     #history1 {
-        font-size: 3.6506vw;
-        /* 28px */
-        margin: 1.9557vw;
-        /* 15px */
-    }
-
-    #history2 {
-        font-size: 3.1291vw;
-        /* 24px */
-        margin: 1.9557vw;
-        /* 15px */
-    }
-
-
-
-    #detail_v_mutua, #history1_v {
-        font-size: 3.3898vw;
-        /* 26px */
-        -webkit-text-stroke-width: 0.5px;
-        /* 텍스트 외곽선*/
-    }
-
-    #detail_v_title {
-        font-size: 4.1721vw;
-        /* 32px */
-    }
-
-    #history2_v {
-        font-size: 2.6076vw;
+        font-size: 4.9544vw;
+        /* 38px */
+        margin: 2.6076vw;
         /* 20px */
     }
 
-    #history3_v {
-        font-size: 2.0860vw;
-        /* 16px */
+    #history2 {
+        font-size: 4.1721vw;
+        /* 32px */
+        margin: 2.3468vw;
+        /* 18px */
     }
 }
 
@@ -286,8 +201,8 @@
     }
 
     #detail_title {
-        font-size: 6.6667vw;
-        /* 32px */
+        font-size: 5.8333vw;
+        /* 28px */
         -webkit-text-stroke-width: 0.6px;
     }
 
@@ -306,36 +221,6 @@
         font-size: 4.1667vw;
         /* 20px */
     }
-
-
-
-    #detail_v_mutua, #history1_v {
-        font-size: 3.7500vw;
-        /* 18px */
-        -webkit-text-stroke-width: 0.2px;
-        /* 텍스트 외곽선*/
-    }
-
-    #detail_v_title {
-        font-size: 5vw;
-        /* 24px */
-        -webkit-text-stroke-width: 0.4px;
-        /* 텍스트 외곽선*/
-    }
-
-    #history2_v {
-        font-size: 3.3333vw;
-        /* 16px */
-        -webkit-text-stroke-width: 0.2px;
-        /* 텍스트 외곽선*/
-    }
-
-    #history3_v {
-        font-size: 2.9167vw;
-        /* 14px */
-        -webkit-text-stroke-width: 0.1px;
-        /* 텍스트 외곽선*/
-    }
 }
 
 
@@ -350,12 +235,11 @@
     }
 
     #detail_title {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .work .line {
-        margin-bottom: 1.667vw;
-        /* 20px */
+        margin-bottom: 16px;
     }
 
     #history1 {
@@ -363,24 +247,6 @@
     }
 
     #history2 {
-        font-size: 12px;
-    }
-
-
-
-    #detail_v_mutua, #history1_v {
-        font-size: 14px;
-    }
-
-    #detail_v_title {
-        font-size: 16px;
-    }
-
-    #history2_v {
-        font-size: 12px;
-    }
-
-    #history3_v {
         font-size: 12px;
     }
 }

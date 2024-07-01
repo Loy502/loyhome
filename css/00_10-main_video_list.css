@@ -227,24 +227,4 @@
         margin-right: 3px;
         margin-bottom: 5px;
     }
-
-    #video_list_item .text1 {
-        font-size: 13px; 
-        -webkit-text-stroke-width: 0.3px; /* 텍스트 외곽선*/
-        margin-top: 10px;
-    }
-
-    #video_list_item .text2 {
-        font-size: 12px;
-        -webkit-text-stroke-width: 0.2px;
-    }
-
-    #video_list_item .text3 {
-        font-size: 11px;
-        -webkit-text-stroke-width: 0.2px;
-    }
-
-    #video_list_item .text4 {
-        font-size: 11px;
-    }
 }
