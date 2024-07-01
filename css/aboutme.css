@@ -241,9 +241,9 @@
 
 .fixed,
 .fixed1 {
-    position: fixed;
     color: #fff;
 
+    position: fixed;
     opacity: 0;
     transition: all 0.5s;
 }
