@@ -5,7 +5,7 @@
     letter-spacing: -0.7px;
     /* 자간 */
     -webkit-text-stroke-width: 0.7px;
-    /* 텍스트 외곽선*/
+    /* 텍스트 외곽선 */
     color: rgb(155, 121, 89);
     -webkit-text-stroke-color: rgb(155, 121, 89);
 }
@@ -13,7 +13,7 @@
 #detail_title {
     font-size: 36px;
     -webkit-text-stroke-width: 1px;
-    /* 텍스트 외곽선*/
+    /* 텍스트 외곽선 */
     -webkit-text-stroke-color: rgb(0, 0, 0);
     letter-spacing: -3px;
     /* 자간 */
@@ -27,7 +27,7 @@
     font-size: 24px;
     color: rgb(71, 126, 34);
     -webkit-text-stroke-width: 0.7px;
-    /* 텍스트 외곽선*/
+    /* 텍스트 외곽선 */
     -webkit-text-stroke-color: rgb(71, 126, 34);
     letter-spacing: -0.7px;
     /* 자간 */
@@ -41,17 +41,18 @@
     -webkit-text-stroke-color: rgb(75, 73, 72);
     letter-spacing: -0.05px;
     /* 자간 */
-
-
-
 }
+
+
+
+
 
 #detail_v_mutua {
     font-size: 30px;
     letter-spacing: -0.7px;
     /* 자간 */
     -webkit-text-stroke-width: 0.7px;
-    /* 텍스트 외곽선*/
+    /* 텍스트 외곽선 */
     color: rgb(155, 121, 89);
     -webkit-text-stroke-color: rgb(155, 121, 89);
 }
@@ -59,7 +60,7 @@
 #detail_v_title {
     font-size: 36px;
     -webkit-text-stroke-width: 1px;
-    /* 텍스트 외곽선*/
+    /* 텍스트 외곽선 */
     -webkit-text-stroke-color: rgb(0, 0, 0);
     letter-spacing: -3px;
     /* 자간 */
@@ -69,7 +70,7 @@
     font-size: 30px;
     color: rgb(71, 126, 34);
     -webkit-text-stroke-width: 0.7px;
-    /* 텍스트 외곽선*/
+    /* 텍스트 외곽선 */
     -webkit-text-stroke-color: rgb(71, 126, 34);
     letter-spacing: -0.7px;
     /* 자간 */
@@ -93,6 +94,8 @@
     letter-spacing: -0.05px;
     /* 자간 */
 }
+
+
 
 
 
@@ -140,6 +143,64 @@
         font-size: 1.9531vw;
         /* 20px */
     }
+
+
+
+
+
+    #detail_v_mutua {
+        font-size: 2.7344vw;
+        /* 28px */
+        -webkit-text-stroke-width: 0.0684vw;
+        /* 0.7px; */
+        /* 텍스트 외곽선 */
+        letter-spacing: -0.0684vw;
+        /* 0.7px; */
+    }
+
+    #detail_v_title {
+        font-size: 3.3203vw;
+        /* 34px */
+        -webkit-text-stroke-width: 0.0977vw;
+        /* 1px; */
+        /* 텍스트 외곽선 */
+        letter-spacing: -0.2930vw;
+        /* 3px; */
+        /* 자간 */
+    }
+
+    #history1_v {
+        font-size: 2.7344vw;
+        /* 28px */
+        -webkit-text-stroke-width: 0.0684vw;
+        /* 0.7px; */
+        /* 텍스트 외곽선 */
+        letter-spacing: -0.0684vw;
+        /* 0.7px; */
+        /* 자간 */
+    }
+
+    #history2_v {
+        font-size: 1.9531vw;
+        /* 20px */
+        -webkit-text-stroke-width: 0.0293vw;
+        /* 0.3px; */
+        /* 텍스트 외곽선 */
+        letter-spacing: -0.0029vw;
+        /* 0.05px; */
+        /* 자간 */
+    }
+
+    #history3_v {
+        font-size: 1.9531vw;
+        /* 20px */
+        -webkit-text-stroke-width: 0.0293vw;
+        /* 0.3px; */
+        /* 텍스트 외곽선 */
+        letter-spacing: -0.0029vw;
+        /* 0.05px; */
+        /* 자간 */
+    }
 }
 
 
@@ -155,7 +216,7 @@
         margin: 0 1.9557vw;
         /* 15px */
         -webkit-text-stroke-width: 0.5px;
-        /* 텍스트 외곽선*/
+        /* 텍스트 외곽선 */
     }
 
     #detail_title {
@@ -169,7 +230,7 @@
         margin-bottom: 5.2151vw;
         /* 40px */
         -webkit-text-stroke-width: 0.5px;
-        /* 텍스트 외곽선*/
+        /* 텍스트 외곽선 */
     }
 
     #history1 {
@@ -184,6 +245,64 @@
         /* 32px */
         margin: 2.3468vw;
         /* 18px */
+    }
+
+
+
+
+
+    #detail_v_mutua {
+        font-size: 3.6506vw;
+        /* 28px */
+        -webkit-text-stroke-width: 0.0913vw;
+        /* 0.7px; */
+        /* 텍스트 외곽선 */
+        letter-spacing: -0.0913vw;
+        /* 0.7px; */
+    }
+
+    #detail_v_title {
+        font-size: 4.4329vw;
+        /* 34px */
+        -webkit-text-stroke-width: 0.1304vw;
+        /* 1px; */
+        /* 텍스트 외곽선 */
+        letter-spacing: -0.2930vw;
+        /* 3px; */
+        /* 자간 */
+    }
+
+    #history1_v {
+        font-size: 3.6506vw;
+        /* 28px */
+        -webkit-text-stroke-width: 0.0913vw;
+        /* 0.7px; */
+        /* 텍스트 외곽선 */
+        letter-spacing: -0.0913vw;
+        /* 0.7px; */
+        /* 자간 */
+    }
+
+    #history2_v {
+        font-size: 3.1291vw;
+        /* 24px */
+        -webkit-text-stroke-width: 0.0391vw;
+        /* 0.3px; */
+        /* 텍스트 외곽선 */
+        letter-spacing: -0.0065vw;
+        /* 0.05px; */
+        /* 자간 */
+    }
+
+    #history3_v {
+        font-size: 3.1291vw;
+        /* 24px */
+        -webkit-text-stroke-width: 0.0391vw;
+        /* 0.3px; */
+        /* 텍스트 외곽선 */
+        letter-spacing: -0.0065vw;
+        /* 0.05px; */
+        /* 자간 */
     }
 }
 
@@ -248,5 +367,39 @@
 
     #history2 {
         font-size: 12px;
+    }
+
+
+
+
+
+    #detail_v_mutua {
+        font-size: 12px;
+        -webkit-text-stroke-width: 0.4px;
+        /* 텍스트 외곽선 */
+    }
+
+    #detail_v_title {
+        font-size: 14px;
+        -webkit-text-stroke-width: 0.6px;
+        /* 텍스트 외곽선 */
+    }
+
+    #history1_v {
+        font-size: 12px;
+        -webkit-text-stroke-width: 0.4px;
+        /* 텍스트 외곽선 */
+    }
+
+    #history2_v {
+        font-size: 11px;
+        -webkit-text-stroke-width: 0.2px;
+        /* 텍스트 외곽선 */
+    }
+
+    #history3_v {
+        font-size: 11px;
+        -webkit-text-stroke-width: 0.05px;
+        /* 텍스트 외곽선 */
     }
 }
