@@ -26,6 +26,11 @@
 	position: sticky;
 	background: rgba(22, 22, 22, 0.85);
 	/*배경만 투명도 지정_맨 뒤 숫자_!!아주 중요!!*/
+
+    transform: All 0.9s ease;
+    -webkit-transition: All 0.9s ease;
+    -moz-transform: All 0.9s ease;
+    -o-transition: All 0.9s ease;
 }
 
 .logo_background {
