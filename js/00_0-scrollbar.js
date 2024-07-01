@@ -1,1 +1,1 @@
-history.scrollRestoration = "manual" //새로고침 스크롤 위치 manual = 복원 안함 / auto  = 복원 < 익스플로러 12부터 적용
+history.scrollRestoration = "auto" //새로고침 스크롤 위치 manual = 복원 안함 / auto  = 복원 < 익스플로러 12부터 적용
