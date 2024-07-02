@@ -546,8 +546,13 @@ html {
 
 
     .scroll_arrow {
-        top: 7.297297297297297vw; /* 54px; */
+        top: 6.666666666666667vw; /* 32px; */
         right: 0.8333333333333334vw; /* 4px; */
+    }
+
+    .scroll_arrow li:nth-child(1) {
+        margin-bottom: 0.8333333333333334vw;
+        /* 4px; */
     }
 }
 
@@ -587,5 +592,9 @@ html {
     .scroll_arrow {
         top: 18px;
         right: 4px;
+    }
+
+    .scroll_arrow li:nth-child(1) {
+        margin-bottom: 4px;
     }
 }
