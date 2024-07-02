@@ -130,7 +130,7 @@
 		<section class="main_section lodefaedin">
 			<!--스와이프-->
 			<div class="main_all">
-				<div class="swiper swiper1">
+				<div class="swiper swiper1"> <!--onclick="toggleScrolling('#banner_online')"-->
 					<div id="openModalPop" class="swiper-wrapper swiper-wrapper1">
 						<div class="swiper-slide swiper-slide1"><img src="img/main/banner/main01_banner_pc.png"
 								alt="슬라이드1"></div>
@@ -1058,7 +1058,7 @@
 
 
 	<!--11 자기소개서 레이어창 섹션-------------------------------------------------->
-	<div id="banner_online">
+	<div id="banner_online" class="banner_online">
 		<div class="aboutme">
 			<div id="pop_content" class="pop_content">
 				<!--자기소개서 이미지-->
@@ -1066,21 +1066,17 @@
 					src="https://github.com/loy5025/loyhome3/blob/main/img/aboutme/%5Bloy%5D%EC%9E%90%EC%86%8C%EC%84%9C.png?raw=true">
 				<!--자기소개서 스크롤 안내-->
 				<ol class="scroll_arrow">
-					<li>▼</li>
-					<li>▼</li>
-					<li>▼</li>
 					<li>
 						<p id="rotation">
 							Please scroll</p>
 					</li>
+					<li>▼</li>
+					<li>▼</li>
+					<li>▼</li>
 				</ol>
-				<!--자기소개서 닫기 및 커서 표시-->
-				<a id="close_button" href="javascript:;" onclick="closeWin();" alt="닫기">
+				<!--자기소개서 닫기 및 커서 표시 onclick="toggleScrolling('요소명')"-->
+				<a id="close_button" class="close_button" href="javascript:;" onclick="closeWin();" alt="닫기">
 					<div class="fixed">✖</div>
-				</a>
-				<!--자기소개서 닫기 및 커서 표시-662px 이하 용-->
-				<a id="close_button1" href="javascript:;" onclick="closeWin();" alt="닫기">
-					<div class="fixed1">✖</div>
 				</a>
 			</div>
 		</div>
