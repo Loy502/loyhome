@@ -38,7 +38,7 @@ html {
     overflow: hidden;
 
 
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
     /*기본 브라우저*/
 }
 
