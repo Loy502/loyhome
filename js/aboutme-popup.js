@@ -16,12 +16,14 @@ $(document).ready(function () {
 });
 
 
-/* 자기소개서 창 & 팝업 오픈 시 배경 스크롤 방지 - 참고 링크 : https://on-slow.tistory.com/29 */
-function popOpen() {
-    $('.banner_online, .show').show();
-    $('html, body, #wrapper').css('overflow', 'hidden')
-}
+// 자기소개서 창 & 팝업 오픈 시 배경 스크롤 방지 - 참고 링크 : https://on-slow.tistory.com/29
+// 스크롤 시 메뉴바가 걸려서 포기
+//function popOpen() {
+//    $('.banner_online, .show').show();
+//    $('html, body, #wrapper').css('overflow', 'hidden')
+//}
 
 
-//자기소개서 레이어 팝업 호출 시 스크롤 상단 위치
-document.getElementById("pop_content").scrollTo(0,0);
+// 자기소개서 레이어 팝업 호출 시 스크롤 상단 위치 - 참고 링크 : https://mhui123.tistory.com/15
+// 안먹힘... 포기
+//document.getElementById('pop_content').scrollTo(0,0);
