@@ -9,6 +9,20 @@
 
 
 
+/* 팝업 오픈 시 배경 스크롤 방지 */
+html,
+body,
+#wrapper {
+    height: 100%;
+    overflow: auto;
+}
+
+html {
+    overflow: hidden !important
+}
+
+
+
 /* 레이어창 배경 참고 링크 - https://bbo-blog.tistory.com/29 */
 #banner_online {
     background-color: rgba(0, 0, 0, 0.6);
@@ -19,6 +33,7 @@
     position: fixed;
     display: none;
     min-width: 280px;
+    overflow: hidden;
 }
 
 /* 레이어창 전체 워랩 (뷰포트 창 가운데 정렬을 위한) */
@@ -42,19 +57,25 @@
 /* 자기소개서 이미지 감싸고 스크롤바 지우기*/
 .pop_content {
     position: relative;
-    margin: 20px 20px;
+    max-height: 800px;
+    margin: 100px;
     border-radius: 40px;
-
-    transform: All 0.9s ease;
-    -webkit-transition: All 0.9s ease;
-    -moz-transform: All 0.9s ease;
-    -o-transition: All 0.9s ease;
 
     overflow: scroll;
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+
+    transform: all, 0.9s ease;
+    -ms-transform: all, 0.9s ease;
+    /*ie9 익스플로러 용으로 보통 생략*/
+    -moz-transform: all, 0.9s ease;
+    /*파이어 폭스*/
+    -webkit-transform: all, 0.9s ease;
+    /*사파리, 크롬(구글)*/
+    -o-transform: all, 0.9s ease;
+    /*오페라*/
 }
 
 
@@ -80,7 +101,7 @@
 .scroll_arrow {
     position: absolute;
     top: 80px;
-    right: 14px;
+    right: 21px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -93,14 +114,16 @@
     width: 14px;
     color: #fff;
     font-size: 14px;
+    line-height: 1;
 }
 
-.scroll_arrow li:nth-child(4) {
-    height: 130px;
+.scroll_arrow li:nth-child(1) {
+    height: 120px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: flex-end;
+    margin-bottom: 10px;
 }
 
 /* 자기소개서 스크롤 플리즈 문구 안내 */
@@ -111,6 +134,7 @@
     font-family: 돋움;
     font-size: 12px;
     letter-spacing: 2px;
+    line-height: 1;
 }
 
 /* 자기소개서 스크롤 플리즈 문구 반짝임 */
@@ -225,8 +249,7 @@
 
 
 /* 자기소개서 닫기 버튼 */
-#close_button,
-#close_button1 {
+#close_button {
     position: absolute;
     right: 44px;
     bottom: 54px;
@@ -235,12 +258,7 @@
     /* 참고 링크 - https://ctrlcccv.github.io/code/2023-10-30-scroll-show/ */
 }
 
-#close_button1 {
-    display: none;
-}
-
-.fixed,
-.fixed1 {
+.fixed {
     color: #fff;
 
     position: fixed;
@@ -262,11 +280,47 @@
 	1280-1025px (브라우저)
 	*/
 @media all and (max-width: 1280px) {
+    .pop_content {
+        position: relative;
+        max-height: 800px;
+    }
 
     .pop_content,
     .pop_content img {
         border-radius: 3.5938vw;
         /*46px*/
+    }
+
+
+
+
+
+    .scroll_arrow {
+        top: 5.46875; /* 70px; */
+        right: 1.640625vw; /* 21px; */
+    }
+
+    .scroll_arrow,
+    .scroll_arrow li {
+        width: 1.0938vw;
+        /* 14px; */
+        font-size: 1.0938vw;
+        /* 14px; */
+    }
+
+    .scroll_arrow li:nth-child(1) {
+        height: 9.375vw;
+        /* 120px; */
+        margin-bottom: 0.78125vw;
+        /* 10px; */
+    }
+
+    /* 자기소개서 스크롤 플리즈 문구 안내 */
+    #rotation {
+        font-size: 0.9375vw;
+        /* 12px; */
+        letter-spacing: 0.15625vw;
+        /* 2px; */
     }
 }
 
@@ -275,9 +329,16 @@
 
 
 /* 태블릿CSS----------------------------------------------------------------------------------------------------
-	1024-741px (반응형)
+	1024-851px (반응형)
 	*/
 @media all and (max-width: 1024px) {
+
+    .pop_content {
+        max-height: 78.1250vw;
+        /* 800px; */
+        margin: 9.7656vw;
+        /* 120px, 100px; */
+    }
 
     .pop_content,
     .pop_content img {
@@ -285,16 +346,14 @@
         /*40px*/
     }
 
-    #close_button,
-    #close_button1 {
+    #close_button {
         right: 4.8828vw;
         /*50px*/
         bottom: 5.8594vw;
         /*60px*/
     }
 
-    #close_button .fixed,
-    #close_button1 .fixed1 {
+    #close_button .fixed {
         font-size: 3.9063vw;
         /*40px*/
     }
@@ -304,21 +363,81 @@
 
 
     .scroll_arrow {
-        top: 7.8125vw;
-        /* 80px; */
+        top: 6.4453125vw; /* 66px; */
+        right: 1.5625vw; /* 16px; */
     }
 
     .scroll_arrow,
     .scroll_arrow li {
-        right: 1.3672vw;
+        width: 1.3671875vw;
         /* 14px; */
-        font-size: 1.3672vw;
+        font-size: 1.3671875vw;
         /* 14px; */
     }
 
-    .scroll_arrow li:nth-child(4) {
-        height: 12.6953;
-        /* 130px; */
+    .scroll_arrow li:nth-child(1) {
+        height: 11.71875vw;
+        /* 120px; */
+        margin-bottom: 0.9765625vw;
+        /* 10px; */
+    }
+
+    /* 자기소개서 스크롤 플리즈 문구 안내 */
+    #rotation {
+        font-size: 1.171875vw;
+        /* 12px; */
+        letter-spacing: 0.1953125vw;
+        /* 2px; */
+    }
+}
+
+
+
+
+
+/* 태블릿/모바일_가로CSS----------------------------------------------------------------------------------------------------
+	850-741px (반응형)
+	*/
+@media all and (max-width: 850px) {
+
+    .pop_content {
+        max-height: 82.3529vw;
+        /* 700px; */
+        margin: 5.8824vw;
+        /* 50px; */
+    }
+
+
+
+
+
+    .scroll_arrow {
+        top: 7.764705882352942vw; /* 66px; */
+        right: 1.647058823529412vw; /* 14px; */
+    }
+
+    .scroll_arrow,
+    .scroll_arrow li {
+        width: 1.647058823529412vw;
+        /* 14px; */
+        font-size: 1.647058823529412vw;
+        /* 14px; */
+        line-height: 1;
+    }
+
+    .scroll_arrow li:nth-child(1) {
+        height: 14.117647058823529vw;
+        /* 120px; */
+        margin-bottom: 0.7058823529411765vw;
+        /* 6px; */
+    }
+
+    /* 자기소개서 스크롤 플리즈 문구 안내 */
+    #rotation {
+        font-size: 1.411764705882353vw;
+        /* 12px; */
+        letter-spacing: 0.2352941176470588vw;
+        /* 2px; */
     }
 }
 
@@ -330,8 +449,12 @@
 	740-481px (반응형)
 	*/
 @media all and (max-width: 740px) {
-    .scroll_arrow {
-        display: none;
+
+    .pop_content {
+        max-height: 81.0811vw;
+        /* 600px; */
+        margin: 5.4054vw;
+        /* 40px; */
     }
 
     .pop_content,
@@ -341,37 +464,48 @@
     }
 
 
-    #close_button,
-    #close_button1 {
+    #close_button {
         right: 5.8670vw;
         /*45px*/
         bottom: 6.5189vw;
         /*50px*/
     }
 
-    #close_button .fixed,
-    #close_button1 .fixed1 {
+    #close_button .fixed {
         font-size: 3.9063vw;
         /*40px*/
     }
 
-    /* 740 이상 용 자기소개서 닫기 버튼 숨기기 */
-    #close_button {
-        display: none;
+
+
+
+
+    .scroll_arrow {
+        top: 7.297297297297297vw; /* 54px; */
+        right: 1.6216216216216217vw; /* 12px; */
     }
 
-    /* 740 이하 용 자기소개서 닫기 버튼 나타내기 */
-    #close_button1 {
-        display: block;
+    .scroll_arrow,
+    .scroll_arrow li {
+        width: 1.891891891891892vw;
+        /* 14px; */
+        font-size: 1.891891891891892vw;
+        /* 14px; */
     }
 
-    /* 자기소개서 닫기 버튼 숨기기 */
-    .fixed.active {
-        display: none;
+    .scroll_arrow li:nth-child(1) {
+        height: 16.216216216216218vw;
+        /* 120px; */
+        margin-bottom: 0.8108108108108109vw;
+        /* 6px; */
     }
 
-    .fixed1 {
-        opacity: 1;
+    /* 자기소개서 스크롤 플리즈 문구 안내 */
+    #rotation {
+        font-size: 1.6216216216216217vw;
+        /* 12px; */
+        letter-spacing: 0.2702702702702703vw;
+        /* 2px; */
     }
 }
 
@@ -384,6 +518,13 @@
 	*/
 
 @media all and (max-width: 480px) {
+
+    .pop_content {
+        max-height: 83.3333vw;
+        /* 400px; */
+        margin: 6.2500vw;
+        /* 30px; */
+    }
 
     .pop_content,
     .pop_content img {
@@ -400,9 +541,13 @@
         /*35px*/
     }
 
-    #close_button .fixed1 {
-        font-size: 4.1667vw;
-        /*20px*/
+
+
+
+
+    .scroll_arrow {
+        top: 7.297297297297297vw; /* 54px; */
+        right: 0.8333333333333334vw; /* 4px; */
     }
 }
 
@@ -416,7 +561,8 @@
 
 @media all and (max-width: 280px) {
     .pop_content {
-        margin: 10px 10px;
+        max-height: 230px;
+        margin: 20px 20px;
     }
 
     .pop_content,
@@ -434,4 +580,12 @@
         /*25px*/
     }
 
+
+
+
+
+    .scroll_arrow {
+        top: 18px;
+        right: 4px;
+    }
 }
