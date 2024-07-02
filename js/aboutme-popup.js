@@ -16,14 +16,17 @@ $(document).ready(function () {
 });
 
 
+/* 자기소개서 창 & 팝업 오픈 시 배경 스크롤 방지 - 참고 링크 : https://on-slow.tistory.com/29 */
+function popOpen() {
+    $('.banner_online, .show').show();
+    $('html, body, #wrapper').css('overflow', 'hidden')
+}
 
 
 //자기소개서 레이어 팝업 종료 시 아래 스크롤 상단 위치
-$("#pop_content").
-    modal.scrollTop; // O
-modal.scrollTop(0); // X
-modal.scrollTo(0, 0);  // O
-modal.animate({ scrollTop: 0 });  // X
 
 
-//자기소개서 레이어 팝업 호출 시 바디 스크롤 방지 참고 링크 - 
+
+
+
+// 모달이 닫혔을 때 스크롤을 활성화 한다.
