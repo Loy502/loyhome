@@ -23,10 +23,5 @@ function popOpen() {
 }
 
 
-//자기소개서 레이어 팝업 종료 시 아래 스크롤 상단 위치
-
-
-
-
-
-// 모달이 닫혔을 때 스크롤을 활성화 한다.
+//자기소개서 레이어 팝업 호출 시 스크롤 상단 위치
+document.getElementById("pop_content").scrollTo(0,0);
