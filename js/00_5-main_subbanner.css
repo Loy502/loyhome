@@ -1,0 +1,283 @@
+@charset "utf-8";
+
+/* 데스크탑CSS----------------------------------------------------------------------------------------------------
+	1440-1281px (브라우저)
+	배너 공간 (1440px)
+	리스트 1줄 = 4개
+	*/
+/*02 메인 섹션--------------------------------------------------*/
+/*메인 스와이프------------------------------*/
+/*서브 배너------------------------------*/
+.banner_wrap {
+    width: 480px;
+    position: relative;
+}
+
+.banner_wrap img {
+    width: 480px;
+}
+
+/*메인 타이틀*/
+/*
+.banner_main_title{
+    font-family: 'GmarketSansBold';
+    font-size: 1.625rem;    /* 26px*/
+/*    letter-spacing: -1px;       /* 자간 */
+/*    word-spacing: 5px;      /* 어간 */
+/*    top: 41%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+/*
+/*서브 타이틀*/
+/*.banner_sub_title{
+    font-size: 0.875rem;    /* 12px */
+/*    top: 46%;
+    left: 36%;
+    transform: translate(-28%, 0);
+}
+.banner_title{
+    color: #fff;
+    text-shadow: 0px 0px 3px/*블러*/
+/* -2px그림자 크기 줄이기*/
+/*rgb(90, 90, 90);
+    position: absolute;
+}
+/*
+/*더보기 버튼*/
+.sub_button {
+    position: absolute;
+    top: 90%;
+    right: 50%;
+    transform: translate(50%, 0);
+}
+
+.sub_button button {
+    font-family: 'GmarketSansLight';
+    width: 7.5rem;
+    /*120px;*/
+    height: 3.125rem;
+    /*50px;*/
+    border-radius: 50px;
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(235, 229, 225);
+    box-shadow: 0px 0px 2px
+        /*블러*/
+        /*-2px그림자 크기 줄이기*/
+        rgb(158, 158, 158);
+    background: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(5px);
+}
+
+.sub_button a {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-text-stroke-width: 0.2px;
+    -o-text-stroke-width: 0.2px;
+
+    /* -webkit-text-stroke-color: #fff;
+    -moz-text-stroke-color: #fff;
+    -o-text-stroke-color: #fff; */
+
+    text-shadow: 0px 0px 4px
+        /*블러*/
+        /*-2px그림자 크기 줄이기*/
+        rgb(0, 0, 0);
+    /* filter:shadow(color=rgb(39, 39, 39), direction=135, strength=2); zoom:1; /* 익스플로러 그림자 */
+}
+
+
+/* 데스크탑/노트북CSS----------------------------------------------------------------------------------------------------
+	1280-1025px (브라우저)
+	배너 공간 (1280px)
+	*/
+@media all and (max-width: 1280px) {
+
+    /*02 메인 섹션--------------------------------------------------*/
+    /*메인 스와이프------------------------------*/
+    /*서브 배너------------------------------*/
+    .banner_wrap img {
+        width: 426px;
+    }
+
+    /*메인 타이틀*/
+    /*
+.banner_main_title{
+	top: 41%;
+    left: 51%;
+}
+/*
+/*서브 타이틀*/
+    /*
+.banner_sub_title{
+	font-size: 0.688rem;    /* 11px */
+    /*	top: 46.5%;
+    left: 36%;
+    transform: translate(-24%, 0);
+}
+/*
+/*더보기 버튼*/
+    .sub_button {
+        top: 89.8%;
+    }
+
+    .sub_button button {
+        font-family: 'GmarketSansLight';
+        width: 6.875rem;
+        /*110px;*/
+        height: 2.75rem;
+        /*44px;*/
+    }
+}
+
+
+/* 태블릿CSS----------------------------------------------------------------------------------------------------
+	1024-768px (반응형)
+	메인 배너 / 서브 배너 분리
+	*/
+@media all and (max-width: 1024px) {
+
+    /*02 메인 섹션--------------------------------------------------*/
+    /*메인 스와이프------------------------------*/
+    /*서브 배너------------------------------*/
+    .banner_wrap {
+        width: 100vw;
+    }
+
+    .banner_wrap img {
+        width: 100%;
+    }
+
+    /*메인 타이틀*/
+    /*
+.banner_main_title{
+    font-size:  7.022471910112359vw;    /* 100px*/
+    /*    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    letter-spacing: -3px;
+}
+/*
+/*서브 타이틀*/
+    /*.banner_sub_title{
+    font-size: 2.808988764044944vw;    /* 40px */
+    /*    top: 56%;
+    left: 38%;
+    transform: translate(-30%, 0);
+}
+/*
+/*더보기 버튼*/
+    .sub_button {
+        top: 75%;
+    }
+
+    .sub_button a {
+        font-size: 3.1250vw;
+        /* 40px */
+        text-shadow: 0px 1px 4px
+            /*블러*/
+            /*-2px그림자 크기 줄이기*/
+            rgb(0, 0, 0);
+    }
+
+    .sub_button button {
+        width: 23.4375vw;
+        /*300px;*/
+        height: 9.3750vw;
+        /*100px;*/
+    }
+}
+
+
+/* 태블릿/모바일_가로CSS----------------------------------------------------------------------------------------------------
+	767-481px (반응형)
+	리스트 1줄 = 3개
+	*/
+@media all and (max-width: 767px) {
+
+    /*02 메인 섹션--------------------------------------------------*/
+    /*메인 스와이프------------------------------*/
+    /*서브 배너------------------------------*/
+    /*메인 타이틀*/
+    /*서브 타이틀*/
+    /*더보기 버튼*/
+    .sub_button button {
+        font-size: 0.625rem;
+        /* 10px */
+    }
+}
+
+
+/* 모바일CSS----------------------------------------------------------------------------------------------------
+	480-281px (반응형)
+	리스트 2개 씩
+	*/
+@media all and (max-width: 480px) {
+
+
+    /*02 메인 섹션--------------------------------------------------*/
+    /*메인 스와이프------------------------------*/
+    /*서브 배너------------------------------*/
+    /*메인 타이틀*/
+    /*서브 타이틀*/
+    /*메인 타이틀*/
+    /*
+.banner_main_title{
+    letter-spacing: -1px;
+    left: 49%;
+    transform: translate(-47%, 0);
+}
+.banner_sub_title{
+    font-size: 0.625rem;    /* 10px */
+    /*    top: 56%;
+    left: 50%;
+    transform: translate(-50%, 0);    
+}
+/*
+/*더보기 버튼*/
+}
+
+/* 모바일CSS----------------------------------------------------------------------------------------------------
+	280px (min-withd 280px 고정)
+	*/
+@media all and (max-width: 280px) {
+
+    /*02 메인 섹션--------------------------------------------------*/
+    /*메인 스와이프------------------------------*/
+    /*서브 배너------------------------------*/
+    .banner_wrap {
+        width: 280px;
+    }
+
+    /*메인 타이틀*/
+    /*
+.banner_main_title{
+	font-size: 1.25rem;	/* 20px*/
+    /*    letter-spacing: -0.5px;
+    left: 48%;
+    transform: translate(-45.5%, 0);
+}
+/*
+/*서브 타이틀*/
+    /*
+.banner_sub_title{
+    font-size: 0.625rem;    /* 10px */
+    /*    left: 11%;
+    transform: translate(0%, 0);
+}
+/*
+/*더보기 버튼*/
+    .sub_button button {
+        width: 74px;
+        height: 30px;
+    }
+
+    .sub_button a {
+        font-size: 12px;
+    }
+}
