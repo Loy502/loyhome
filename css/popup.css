@@ -12,6 +12,10 @@
     align-items: center;
     user-select: none;
     min-width: 280px;
+
+
+    backdrop-filter: blur(3px);
+    /*기본 브라우저*/
 }
 .popup_wrap{
     display: flex;
@@ -24,10 +28,16 @@
     min-width: 180px;
     max-width: 400px;
 
-    transform: All 0.9s ease;
+    transition: All 0.9s ease;    
+    /*기본 브라우저*/
     -webkit-transition: All 0.9s ease;
-    -moz-transform: All 0.9s ease;
+    /*사파리, 크롬(구글)*/
+    -ms-transition: all, 0.9s ease;
+    /*ie9 익스플로러 용으로 보통 생략*/
+    -moz-transition: All 0.9s ease;
+    /*파이어 폭스*/
     -o-transition: All 0.9s ease;
+    /*오페라*/
 }
 #popup img{
     display: block;

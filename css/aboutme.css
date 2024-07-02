@@ -9,7 +9,8 @@
 
 
 
-/* 팝업 오픈 시 배경 스크롤 방지 */
+/* 팝업 오픈 시 배경 스크롤 방지 - 스크롤 시 메뉴바가 걸려서 포기 */
+/*
 html,
 body,
 #wrapper {
@@ -20,6 +21,7 @@ body,
 html {
     overflow: hidden !important
 }
+    */
 
 
 
@@ -34,6 +36,10 @@ html {
     display: none;
     min-width: 280px;
     overflow: hidden;
+
+
+    backdrop-filter: blur(10px);
+    /*기본 브라우저*/
 }
 
 /* 레이어창 전체 워랩 (뷰포트 창 가운데 정렬을 위한) */
@@ -67,21 +73,16 @@ html {
     scrollbar-width: none;
     /* Firefox */
 
-    transform: all, 0.9s ease;
-    -ms-transform: all, 0.9s ease;
-    /*ie9 익스플로러 용으로 보통 생략*/
-    -moz-transform: all, 0.9s ease;
-    /*파이어 폭스*/
-    -webkit-transform: all, 0.9s ease;
+    transition: All 0.9s ease;    
+    /*기본 브라우저*/
+    -webkit-transition: All 0.9s ease;
     /*사파리, 크롬(구글)*/
-    -o-transform: all, 0.9s ease;
+    -ms-transition: all, 0.9s ease;
+    /*ie9 익스플로러 용으로 보통 생략*/
+    -moz-transition: All 0.9s ease;
+    /*파이어 폭스*/
+    -o-transition: All 0.9s ease;
     /*오페라*/
-}
-
-
-::-webkit-scrollbar {
-    display: none;
-    /* Chrome, Safari, Opera*/
 }
 
 /* 자기소개서 이미지 반응형 및 라운딩 */

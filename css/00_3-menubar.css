@@ -10,48 +10,79 @@
 /*로고------------------------------*/
 /*로고바 아이콘------------------------------*/
 /*메뉴바------------------------------*/
-.navbar_down{
+.navbar_down {
     position: sticky;
     top: 54px;
     width: 100%;
     min-width: 280px;
     z-index: 9998;
     display: block;
-    backdrop-filter: blur(5px); /*블러 처리*/
-    -webkit-backdrop-filter: blur(5px);
-	-moz-backdrop-filter: blur(5px);
-	-o-backdrop-filter: blur(5px);
+
+
+    transition: All 0.9s ease;    
+    /*기본 브라우저*/
+    -webkit-transition: All 0.9s ease;
+    /*사파리, 크롬(구글)*/
+    -ms-transition: all, 0.9s ease;
+    /*ie9 익스플로러 용으로 보통 생략*/
+    -moz-transition: All 0.9s ease;
+    /*파이어 폭스*/
+    -o-transition: All 0.9s ease;
+    /*오페라*/
+
+
+    backdrop-filter: blur(5px);
+    /*기본 브라우저*/
+
+
+    background: rgba(22, 22, 22, 0.85);
+    /*배경만 투명도 지정_맨 뒤 숫자_!!아주 중요!!*/
+
     
-	background: rgba(22, 22, 22, 0.85);    /*배경만 투명도 지정_맨 뒤 숫자_!!아주 중요!!*/	
-    box-shadow: 4px 0px 5px/*블러*/ /*-2px그림자 크기 줄이기*/ rgb(17, 17, 17);
+    box-shadow: 4px 0px 5px
+        /*블러*/
+        /*-2px그림자 크기 줄이기*/
+        rgb(17, 17, 17);
     /* border-top: 1px solid rgb(99, 98, 98); */
     /* border-bottom: 1px solid rgb(99, 98, 98); */
-
-    transform: All 0.9s ease;
-    -webkit-transition: All 0.9s ease;
-    -moz-transform: All 0.9s ease;
-    -o-transition: All 0.9s ease;
 
 }
 
 /*css 속성*/
-.navbar_up{
+.navbar_up {
     top: -54px;
     width: 100%;
     min-width: 280px;
     display: block;
-	background: rgba(22, 22, 22, 0.85);    /*배경만 투명도 지정_맨 뒤 숫자_!!아주 중요!!*/
-    box-shadow: 4px 0px 5px/*블러*/ /*-2px그림자 크기 줄이기*/ rgb(17, 17, 17);
+    background: rgba(22, 22, 22, 0.85);
+    /*배경만 투명도 지정_맨 뒤 숫자_!!아주 중요!!*/
+
+
+    transition: All 0.9s ease;    
+    /*기본 브라우저*/
+    -webkit-transition: All 0.9s ease;
+    /*사파리, 크롬(구글)*/
+    -ms-transition: all, 0.9s ease;
+    /*ie9 익스플로러 용으로 보통 생략*/
+    -moz-transition: All 0.9s ease;
+    /*파이어 폭스*/
+    -o-transition: All 0.9s ease;
+    /*오페라*/
+
+
+    backdrop-filter: blur(5px);
+    /*기본 브라우저*/
+
+
+    box-shadow: 4px 0px 5px
+        /*블러*/
+        /*-2px그림자 크기 줄이기*/
+        rgb(17, 17, 17);
     /* border-top: 1px solid rgb(99, 98, 98); */
     /* border-bottom: 1px solid rgb(99, 98, 98); */
-
-    transform: All 0.9s ease;
-    -webkit-transition: All 0.9s ease;
-    -moz-transform: All 0.9s ease;
-    -o-transition: All 0.9s ease;
 }
 
-.gnb{
+.gnb {
     width: 100%;
     max-width: 1440px;
     height: 50px;
@@ -60,7 +91,8 @@
     justify-content: center;
     align-items: center;
 }
-.gnb div{
+
+.gnb div {
     width: 16.66666666666667%;
     border-right: 1px solid rgb(75, 75, 75);
     /* -webkit-text-stroke-width: 0.1px; /* 텍스트 외곽선 */
@@ -69,7 +101,8 @@
     box-sizing: border-box;
     display: block;
 }
-.gnb div:last-child{
+
+.gnb div:last-child {
     border-right: none;
 }
 
@@ -82,13 +115,13 @@
 	1280-1025px (브라우저)
 	배너 공간 (1280px)
 	*/
-@media all and (max-width: 1280px){
+@media all and (max-width: 1280px) {
 
-/*01 헤더 섹션--------------------------------------------------*/
-/*로고바------------------------------*/
-/*로고------------------------------*/
-/*로고바 아이콘------------------------------*/
-/*메뉴바------------------------------*/
+    /*01 헤더 섹션--------------------------------------------------*/
+    /*로고바------------------------------*/
+    /*로고------------------------------*/
+    /*로고바 아이콘------------------------------*/
+    /*메뉴바------------------------------*/
 }
 
 
@@ -96,26 +129,30 @@
 	1024-768px (반응형)
 	메인 배너 / 서브 배너 분리
 	*/
-@media all and (max-width: 1024px){
+@media all and (max-width: 1024px) {
 
-/*01 헤더 섹션--------------------------------------------------*/
-/*로고바------------------------------*/
-/*로고------------------------------*/
-/*로고바 아이콘------------------------------*/
-/*메뉴바------------------------------*/
-.navbar_down{
-    top: 48px;
-}
-/*css 속성*/
-.navbar_up{
-    top: -48px;
-}
-.gnb{
-    height: 46px;
-}
-.menu{
-    font-size: 0.688rem;    /* 11px */
-}
+    /*01 헤더 섹션--------------------------------------------------*/
+    /*로고바------------------------------*/
+    /*로고------------------------------*/
+    /*로고바 아이콘------------------------------*/
+    /*메뉴바------------------------------*/
+    .navbar_down {
+        top: 48px;
+    }
+
+    /*css 속성*/
+    .navbar_up {
+        top: -48px;
+    }
+
+    .gnb {
+        height: 46px;
+    }
+
+    .menu {
+        font-size: 0.688rem;
+        /* 11px */
+    }
 }
 
 
@@ -123,29 +160,34 @@
 	767-481px (반응형)
 	리스트 1줄 = 3개
 	*/
-@media all and (max-width: 767px){
+@media all and (max-width: 767px) {
 
-/*01 헤더 섹션--------------------------------------------------*/
-/*로고바------------------------------*/
-/*로고------------------------------*/
-/*로고바 아이콘------------------------------*/
-/*메뉴바------------------------------*/
-.navbar_down{
-    top: 44px;
-}
-/*css 속성*/
-.navbar_up{
-    top: -44px;
-}
-.gnb{
-    height: 40px;
-}
-.gnb div{
-    /* -webkit-text-stroke-width: 0.1px; /* 텍스트 외곽선 */
-}
-.menu a{
-    font-size: 0.625rem; /*10px;*/
-}
+    /*01 헤더 섹션--------------------------------------------------*/
+    /*로고바------------------------------*/
+    /*로고------------------------------*/
+    /*로고바 아이콘------------------------------*/
+    /*메뉴바------------------------------*/
+    .navbar_down {
+        top: 44px;
+    }
+
+    /*css 속성*/
+    .navbar_up {
+        top: -44px;
+    }
+
+    .gnb {
+        height: 40px;
+    }
+
+    .gnb div {
+        /* -webkit-text-stroke-width: 0.1px; /* 텍스트 외곽선 */
+    }
+
+    .menu a {
+        font-size: 0.625rem;
+        /*10px;*/
+    }
 }
 
 
@@ -153,70 +195,84 @@
 	480-281px (반응형)
 	리스트 2개 씩
 	*/
-@media all and (max-width: 480px){
+@media all and (max-width: 480px) {
 
-/*01 헤더 섹션--------------------------------------------------*/
-/*로고바------------------------------*/
-/*로고------------------------------*/
-/*로고바 아이콘------------------------------*/
-/*메뉴바------------------------------*/
-.navbar_down{
-    top: 34px;
-}
-/*css 속성*/
-.navbar_up{
-    top: -34px;
-}
-.gnb{
-    height: 70px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-.menu{
-    width: 100%;
-    height: 35px;
-    min-width: 33.33333333333333%; /*160px*/    
-}
-.menu a{
-    line-height: 35px;
-}
-.gnb div:nth-child(3){
-    border-right: none;
-}
-.menu1, .menu2, .menu3{
-    border-bottom: 1px solid rgb(75, 75, 75);
-}
+    /*01 헤더 섹션--------------------------------------------------*/
+    /*로고바------------------------------*/
+    /*로고------------------------------*/
+    /*로고바 아이콘------------------------------*/
+    /*메뉴바------------------------------*/
+    .navbar_down {
+        top: 34px;
+    }
+
+    /*css 속성*/
+    .navbar_up {
+        top: -34px;
+    }
+
+    .gnb {
+        height: 70px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .menu {
+        width: 100%;
+        height: 35px;
+        min-width: 33.33333333333333%;
+        /*160px*/
+    }
+
+    .menu a {
+        line-height: 35px;
+    }
+
+    .gnb div:nth-child(3) {
+        border-right: none;
+    }
+
+    .menu1,
+    .menu2,
+    .menu3 {
+        border-bottom: 1px solid rgb(75, 75, 75);
+    }
 }
 
 
 /* 모바일CSS----------------------------------------------------------------------------------------------------
 	280px (min-withd 280px 고정)
 	*/
-@media all and (max-width: 280px){
+@media all and (max-width: 280px) {
 
-/*01 헤더 섹션--------------------------------------------------*/
-/*로고바------------------------------*/
-/*로고------------------------------*/
-/*로고바 아이콘------------------------------*/
-/*메뉴바------------------------------*/
-.navbar_down{
-    top: 28px;
-}
-/*css 속성*/
-.navbar_up{
-    top: -28px;
-}
-.gnb{
-    height: 60px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-.menu{
-    width: 100%;
-    height: 30px;
-    min-width: 33.33333333333333%; /*160px*/    
-}
-.menu a{
-    line-height: 30px;
-}
+    /*01 헤더 섹션--------------------------------------------------*/
+    /*로고바------------------------------*/
+    /*로고------------------------------*/
+    /*로고바 아이콘------------------------------*/
+    /*메뉴바------------------------------*/
+    .navbar_down {
+        top: 28px;
+    }
+
+    /*css 속성*/
+    .navbar_up {
+        top: -28px;
+    }
+
+    .gnb {
+        height: 60px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .menu {
+        width: 100%;
+        height: 30px;
+        min-width: 33.33333333333333%;
+        /*160px*/
+    }
+
+    .menu a {
+        line-height: 30px;
+    }
 }
