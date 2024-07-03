@@ -19,7 +19,7 @@
     display: block;
 
 
-    transition: All 0.9s ease;    
+    transition: All 0.9s ease;
     /*기본 브라우저*/
     -webkit-transition: All 0.9s ease;
     /*사파리, 크롬(구글)*/
@@ -33,12 +33,20 @@
 
     backdrop-filter: blur(5px);
     /*기본 브라우저*/
+    -webkit-backdrop-filter: blur(5px);
+    /*사파리, 크롬(구글)*/
+    -ms-backdrop-filter: blur(5px);
+    /*ie9 익스플로러 용으로 보통 생략*/
+    -moz-backdrop-filter: blur(5px);
+    /*파이어 폭스*/
+    -o-backdrop-filter: blur(5px);
+    /*오페라*/
 
 
     background: rgba(22, 22, 22, 0.85);
     /*배경만 투명도 지정_맨 뒤 숫자_!!아주 중요!!*/
 
-    
+
     box-shadow: 4px 0px 5px
         /*블러*/
         /*-2px그림자 크기 줄이기*/
@@ -58,7 +66,7 @@
     /*배경만 투명도 지정_맨 뒤 숫자_!!아주 중요!!*/
 
 
-    transition: All 0.9s ease;    
+    transition: All 0.9s ease;
     /*기본 브라우저*/
     -webkit-transition: All 0.9s ease;
     /*사파리, 크롬(구글)*/
@@ -72,6 +80,14 @@
 
     backdrop-filter: blur(5px);
     /*기본 브라우저*/
+    -webkit-backdrop-filter: blur(5px);
+    /*사파리, 크롬(구글)*/
+    -ms-backdrop-filter: blur(5px);
+    /*ie9 익스플로러 용으로 보통 생략*/
+    -moz-backdrop-filter: blur(5px);
+    /*파이어 폭스*/
+    -o-backdrop-filter: blur(5px);
+    /*오페라*/
 
 
     box-shadow: 4px 0px 5px

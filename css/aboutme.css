@@ -38,8 +38,16 @@ html {
     overflow: hidden;
 
 
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
     /*기본 브라우저*/
+    -webkit-backdrop-filter: blur(5px);
+    /*사파리, 크롬(구글)*/
+    -ms-backdrop-filter: blur(5px);
+    /*ie9 익스플로러 용으로 보통 생략*/
+    -moz-backdrop-filter: blur(5px);
+    /*파이어 폭스*/
+    -o-backdrop-filter: blur(5px);
+    /*오페라*/
 }
 
 /* 레이어창 전체 워랩 (뷰포트 창 가운데 정렬을 위한) */
@@ -67,13 +75,8 @@ html {
     margin: 100px;
     border-radius: 40px;
 
-    overflow: scroll;
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
 
-    transition: All 0.9s ease;    
+    transition: All 0.9s ease;
     /*기본 브라우저*/
     -webkit-transition: All 0.9s ease;
     /*사파리, 크롬(구글)*/
@@ -83,7 +86,20 @@ html {
     /*파이어 폭스*/
     -o-transition: All 0.9s ease;
     /*오페라*/
+
+    overflow: scroll;
+    -ms-overflow-style: none;
+    /* 팝업 스크롤 숨기기 - 인터넷 익스플로러 동작 */
+    scrollbar-width: none;
+    /* 팝업 스크롤 숨기기 - 파이어폭스 동작 */
 }
+
+.pop_content::-webkit-scrollbar {
+    display: none;
+    /* 팝업 스크롤 숨기기 - ( 크롬, 사파리, 오페라, 엣지 ) 동작 */
+}
+
+
 
 /* 자기소개서 이미지 반응형 및 라운딩 */
 .pop_content img {
@@ -297,8 +313,10 @@ html {
 
 
     .scroll_arrow {
-        top: 5.46875; /* 70px; */
-        right: 1.640625vw; /* 21px; */
+        top: 5.46875;
+        /* 70px; */
+        right: 1.640625vw;
+        /* 21px; */
     }
 
     .scroll_arrow,
@@ -364,8 +382,10 @@ html {
 
 
     .scroll_arrow {
-        top: 6.4453125vw; /* 66px; */
-        right: 1.5625vw; /* 16px; */
+        top: 6.4453125vw;
+        /* 66px; */
+        right: 1.5625vw;
+        /* 16px; */
     }
 
     .scroll_arrow,
@@ -413,8 +433,10 @@ html {
 
 
     .scroll_arrow {
-        top: 7.764705882352942vw; /* 66px; */
-        right: 1.647058823529412vw; /* 14px; */
+        top: 7.764705882352942vw;
+        /* 66px; */
+        right: 1.647058823529412vw;
+        /* 14px; */
     }
 
     .scroll_arrow,
@@ -482,8 +504,10 @@ html {
 
 
     .scroll_arrow {
-        top: 7.297297297297297vw; /* 54px; */
-        right: 1.6216216216216217vw; /* 12px; */
+        top: 7.297297297297297vw;
+        /* 54px; */
+        right: 1.6216216216216217vw;
+        /* 12px; */
     }
 
     .scroll_arrow,
@@ -547,8 +571,10 @@ html {
 
 
     .scroll_arrow {
-        top: 6.666666666666667vw; /* 32px; */
-        right: 0.8333333333333334vw; /* 4px; */
+        top: 6.666666666666667vw;
+        /* 32px; */
+        right: 0.8333333333333334vw;
+        /* 4px; */
     }
 
     .scroll_arrow li:nth-child(1) {
