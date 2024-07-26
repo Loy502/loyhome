@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /* 데스크탑CSS----------------------------------------------------------------------------------------------------
 	1440-1281px (브라우저)
 	배너 공간 (1440px)
@@ -6,70 +7,93 @@
 	*/
 
 /*03 리스트 섹션--------------------------------------------------*/
-.space{
+
+.space {
 	height: 170px;
 }
+
 /*베이직 타이틀------------------------------*/
-.title_all{
+.title_all {
 	margin-bottom: 50px;
 }
-.title_all a{
+
+.title_all a {
 	display: inline-flex;
 	flex-direction: column;
 	margin-left: 10px;
 	margin-right: 10px;
 }
+
 /*메인 타이틀*/
-.main_title{
-    font-family: 'GmarketSansBold';
-    font-size: 3.75rem;    /* 60px*/
-    letter-spacing: -4px;       /* 자간 */
-    word-spacing: 5px;      /* 어간 */
-    top: 4%;
+.main_title {
+	font-family: 'GmarketSansBold';
+	font-size: 3.75rem;
+	/* 60px*/
+	letter-spacing: -4px;
+	/* 자간 */
+	word-spacing: 5px;
+	/* 어간 */
+	top: 4%;
 }
+
 /*서브 타이틀*/
 /*베이직 리스트------------------------------*/
-.sub_title{
-    font-size: 1.875rem;    /* 60px */
-    letter-spacing: -4px;       /* 자간 */
-    word-spacing: 5px;      /* 어간 */
-	-webkit-text-stroke-width: 0.6px;     /* 텍스트 외곽선 */
-    -webkit-text-stroke-color: #262626;      /* 텍스트 컬러 */
+.sub_title {
+	font-size: 1.875rem;
+	/* 60px */
+	letter-spacing: -4px;
+	/* 자간 */
+	word-spacing: 5px;
+	/* 어간 */
+	-webkit-text-stroke-width: 0.6px;
+	/* 텍스트 외곽선 */
+	-webkit-text-stroke-color: #262626;
+	/* 텍스트 컬러 */
 }
+
 /*더보기 버튼------------------------------*/
+
+
+/* 아이패드 프로 --- 가로 너비 1366*/
+@media only screen and (orientation: landscape) {
+}
 
 
 /* 데스크탑/노트북CSS----------------------------------------------------------------------------------------------------
 	1280-1025px (브라우저)
 	배너 공간 (1280px)
 	*/
-@media all and (max-width: 1280px){
+@media all and (max-width: 1280px) {
 
-/*03 리스트 섹션--------------------------------------------------*/
-.space{
-	height: 140px;
-}
-.title_all{
-	margin-bottom: 40px;
-}
+	/*03 리스트 섹션--------------------------------------------------*/
+	.space {
+		height: 140px;
+	}
 
-.title_all a {
-	margin-left: 8px;
-	margin-right: 8px;
-}
+	.title_all {
+		margin-bottom: 40px;
+	}
 
-/*베이직 타이틀------------------------------*/
-/*메인 타이틀*/
-.main_title{
-    font-size: 50px;
-	letter-spacing: -2px;       /* 자간 */
-}
-/*서브 타이틀*/
-.sub_title{
-    font-size: 30px;
-}
-/*베이직 리스트------------------------------*/
-/*더보기 버튼------------------------------*/
+	.title_all a {
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+
+	/*베이직 타이틀------------------------------*/
+	/*메인 타이틀*/
+	.main_title {
+		font-size: 50px;
+		letter-spacing: -2px;
+		/* 자간 */
+	}
+
+	/*서브 타이틀*/
+	.sub_title {
+		font-size: 30px;
+	}
+
+	/*베이직 리스트------------------------------*/
+	/*더보기 버튼------------------------------*/
 }
 
 
@@ -77,37 +101,45 @@
 	1024-768px (반응형)
 	메인 배너 / 서브 배너 분리
 	*/
-@media all and (max-width: 1024px){
+@media all and (max-width: 1024px) {
 
-/*03 리스트 섹션--------------------------------------------------*/
-.space{
-	height: 130px;
-}
-/*베이직 타이틀------------------------------*/
-.title_all{
-	margin-bottom: 30px;
-}
+	/*03 리스트 섹션--------------------------------------------------*/
+	.space {
+		height: 130px;
+	}
 
-.title_all a {
-	margin-left: 6px;
-	margin-right: 6px;
-}
+	/*베이직 타이틀------------------------------*/
+	.title_all {
+		margin-bottom: 30px;
+	}
 
-/*메인 타이틀*/
-.main_title{
-    font-size: 44px;
-    letter-spacing: -3px;       /* 자간 */
-    word-spacing: 4px;      /* 어간 */
-}
-/*서브 타이틀*/
-.sub_title{
-    font-size: 24px;
-    letter-spacing: -3px;       /* 자간 */
-    word-spacing: 4px;      /* 어간 */
-	-webkit-text-stroke-width: 0.4px;     /* 텍스트 외곽선 */
-}
-/*베이직 리스트------------------------------*/
-/*더보기 버튼------------------------------*/
+	.title_all a {
+		margin-left: 6px;
+		margin-right: 6px;
+	}
+
+	/*메인 타이틀*/
+	.main_title {
+		font-size: 44px;
+		letter-spacing: -3px;
+		/* 자간 */
+		word-spacing: 4px;
+		/* 어간 */
+	}
+
+	/*서브 타이틀*/
+	.sub_title {
+		font-size: 24px;
+		letter-spacing: -3px;
+		/* 자간 */
+		word-spacing: 4px;
+		/* 어간 */
+		-webkit-text-stroke-width: 0.4px;
+		/* 텍스트 외곽선 */
+	}
+
+	/*베이직 리스트------------------------------*/
+	/*더보기 버튼------------------------------*/
 }
 
 
@@ -115,36 +147,43 @@
 	767-481px (반응형)
 	리스트 1줄 = 3개
 	*/
-@media all and (max-width: 767px){
+@media all and (max-width: 767px) {
 
-/*03 리스트 섹션--------------------------------------------------*/
-.space{
-	height: 100px;
-}
-/*베이직 타이틀------------------------------*/
-.title_all{
-	margin-bottom: 20px;
-}
+	/*03 리스트 섹션--------------------------------------------------*/
+	.space {
+		height: 100px;
+	}
 
-.title_all a {
-	margin-left: 4px;
-	margin-right: 4px;
-}
+	/*베이직 타이틀------------------------------*/
+	.title_all {
+		margin-bottom: 20px;
+	}
 
-/*메인 타이틀*/
-.main_title{
-    font-size: 36px;
-    letter-spacing: -3px;       /* 자간 */
-    word-spacing: 2px;      /* 어간 */
-}
-/*서브 타이틀*/
-.sub_title{
-    font-size: 18px;
-    letter-spacing: -2px;       /* 자간 */
-    word-spacing: 2px;      /* 어간 */
-}
-/*베이직 리스트------------------------------*/
-/*더보기 버튼------------------------------*/
+	.title_all a {
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+
+	/*메인 타이틀*/
+	.main_title {
+		font-size: 36px;
+		letter-spacing: -3px;
+		/* 자간 */
+		word-spacing: 2px;
+		/* 어간 */
+	}
+
+	/*서브 타이틀*/
+	.sub_title {
+		font-size: 18px;
+		letter-spacing: -2px;
+		/* 자간 */
+		word-spacing: 2px;
+		/* 어간 */
+	}
+
+	/*베이직 리스트------------------------------*/
+	/*더보기 버튼------------------------------*/
 }
 
 
@@ -152,64 +191,78 @@
 	480-281px (반응형)
 	리스트 2개 씩
 	*/
-@media all and (max-width: 480px){
+@media all and (max-width: 480px) {
 
-/*03 리스트 섹션--------------------------------------------------*/
-.space{
-	height: 70px;
-}
-/*베이직 타이틀------------------------------*/
-.title_all{
-	margin-bottom: 15px;
-}
+	/*03 리스트 섹션--------------------------------------------------*/
+	.space {
+		height: 70px;
+	}
 
-.title_all a {
-	margin-left: 3px;
-	margin-right: 3px;
-}
+	/*베이직 타이틀------------------------------*/
+	.title_all {
+		margin-bottom: 15px;
+	}
 
-/*메인 타이틀*/
-.main_title{
-	font-size: 26px;
-    letter-spacing: -1.5px;       /* 자간 */
-    word-spacing: 1.5px;      /* 어간 */
-}
-.sub_title{
-    font-size: 14px;
-    letter-spacing: -1.5px;       /* 자간 */
-    word-spacing: 1.5px;      /* 어간 */
-	-webkit-text-stroke-width: 0.3px;     /* 텍스트 외곽선 */
-}
-/*서브 타이틀*/
-/*베이직 리스트------------------------------*/
-/*더보기 버튼------------------------------*/
+	.title_all a {
+		margin-left: 3px;
+		margin-right: 3px;
+	}
+
+	/*메인 타이틀*/
+	.main_title {
+		font-size: 26px;
+		letter-spacing: -1.5px;
+		/* 자간 */
+		word-spacing: 1.5px;
+		/* 어간 */
+	}
+
+	.sub_title {
+		font-size: 14px;
+		letter-spacing: -1.5px;
+		/* 자간 */
+		word-spacing: 1.5px;
+		/* 어간 */
+		-webkit-text-stroke-width: 0.3px;
+		/* 텍스트 외곽선 */
+	}
+
+	/*서브 타이틀*/
+	/*베이직 리스트------------------------------*/
+	/*더보기 버튼------------------------------*/
 }
 
 
 /* 모바일CSS----------------------------------------------------------------------------------------------------
 	280px (고정)
 	*/
-@media all and (max-width: 280px){
+@media all and (max-width: 280px) {
 
-/*03 리스트 섹션--------------------------------------------------*/
-.space{
-	height: 60px
-}
-/*베이직 타이틀------------------------------*/
-.title_all a {
-	margin-left: 4px;
-	margin-right: 4px;
-}
-/*메인 타이틀*/
-.main_title{
-    font-size: 20px;
-    letter-spacing: -1px;       /* 자간 */
-    word-spacing: 1px;      /* 어간 */
-}
-/*서브 타이틀*/
-.sub_title{
-	font-size: 13px;
-}
-/*베이직 리스트------------------------------*/
-/*더보기 버튼------------------------------*/
+	/*03 리스트 섹션--------------------------------------------------*/
+	.space {
+		height: 60px
+	}
+
+	/*베이직 타이틀------------------------------*/
+	.title_all a {
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+
+	/*메인 타이틀*/
+	.main_title {
+		font-size: 20px;
+		letter-spacing: -1px;
+		/* 자간 */
+		word-spacing: 1px;
+		/* 어간 */
+	}
+
+	/*서브 타이틀*/
+	.sub_title {
+		font-size: 13px;
+	}
+
+	/*베이직 리스트------------------------------*/
+	/*더보기 버튼------------------------------*/
 }

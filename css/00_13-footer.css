@@ -1,18 +1,21 @@
 @charset "utf-8";
 
 /*07 푸터 섹션--------------------------------------------------*/
+
 .footer {
 	height: 150px;
 	min-width: 280px;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	letter-spacing: 0.5px; /* 자간 */
+	letter-spacing: 0.5px;
+	/* 자간 */
 	/* border-top: 1px solid rgb(230, 230, 230); */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: rgba(22, 22, 22, 0.85);  /*배경만 투명도 지정_맨 뒤 숫자_!!아주 중요!!*/	
+	background: rgba(22, 22, 22, 0.85);
+	/*배경만 투명도 지정_맨 뒤 숫자_!!아주 중요!!*/
 }
 
 .footer p {
@@ -30,7 +33,8 @@
 }
 
 .phone {
-	cursor: text;}
+	cursor: text;
+}
 
 .email a {
 	color: rgb(87, 145, 51);
@@ -43,11 +47,17 @@
 }
 
 
+/* 아이패드 프로 --- 가로 너비 1366*/
+@media only screen and (orientation: landscape) {
+}
+
+
 /* 데스크탑/노트북CSS----------------------------------------------------------------------------------------------------
 	1280-1025px (브라우저)
 	배너 공간 (1280px)
 	*/
 @media all and (max-width: 1280px) {
+
 	/*07 푸터 섹션--------------------------------------------------*/
 }
 
@@ -57,6 +67,7 @@
 	메인 배너 / 서브 배너 분리
 	*/
 @media all and (max-width: 1024px) {
+
 	/*07 푸터 섹션--------------------------------------------------*/
 }
 
@@ -79,6 +90,17 @@
 	리스트 2개 씩
 	*/
 	@media all and (max-width: 480px) {
+		@-ms-viewport {
+			width: device-width;
+		}
+
+		@-o-viewport {
+			width: device-width;
+		}
+
+		@viewport {
+			width: device-width;
+		}
 
 		/*07 푸터 섹션--------------------------------------------------*/
 		.footer p {
@@ -93,6 +115,18 @@
 	280px (min-withd 280px 고정)
 	*/
 	@media all and (max-width: 280px) {
+		@-ms-viewport {
+			width: device-width;
+		}
+
+		@-o-viewport {
+			width: device-width;
+		}
+
+		@viewport {
+			width: device-width;
+		}
+
 		/*07 푸터 섹션--------------------------------------------------*/
 	}
 }

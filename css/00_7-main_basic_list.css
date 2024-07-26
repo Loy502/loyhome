@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /* 데스크탑CSS----------------------------------------------------------------------------------------------------
 	1440-1281px (브라우저)
 	배너 공간 (1440px)
@@ -10,6 +11,7 @@
 /*메인 타이틀*/
 /*서브 타이틀*/
 /*베이직 리스트------------------------------*/
+
 .list_container {
     margin: auto;
     width: 1420px;
@@ -20,7 +22,8 @@
 
 .list_item {
     margin-bottom: 60px;
-    width: 24.47183098591549%; /*347.5px*/
+    width: 24.47183098591549%;
+    /*347.5px*/
 }
 
 .list_item a {
@@ -34,9 +37,12 @@
 }
 
 .list_item .text {
-    letter-spacing: -1px; /* 자간 */
-    word-spacing: 3px; /* 어간 */
-    line-height: 1.15; /* 행간 */
+    letter-spacing: -1px;
+    /* 자간 */
+    word-spacing: 3px;
+    /* 어간 */
+    line-height: 1.15;
+    /* 행간 */
     margin-bottom: 7px;
     margin-left: 15px;
     margin-right: 15px;
@@ -44,7 +50,8 @@
 
 .list_item .text1 {
     font-size: 20px;
-    -webkit-text-stroke-width: 0.7px; /* 텍스트 외곽선*/
+    -webkit-text-stroke-width: 0.7px;
+    /* 텍스트 외곽선*/
     margin-top: 10px;
     display: inline-block;
 }
@@ -65,6 +72,20 @@
     font-size: 16px;
     color: rgb(75, 73, 72);
     -webkit-text-stroke-width: 0.1px;
+}
+
+
+/* 아이패드 프로 --- 가로 너비 1366*/
+@media only screen and (orientation: landscape) {
+    /*03 리스트 섹션--------------------------------------------------*/
+    /*베이직 타이틀------------------------------*/
+    /*메인 타이틀*/
+    /*서브 타이틀*/
+    /*베이직 리스트------------------------------*/
+    
+    .list_container {
+        width: 1360px;
+    }
 }
 
 
@@ -90,15 +111,15 @@
     .list_item .text1 {
         font-size: 18px;
     }
-    
+
     .list_item .text2 {
         font-size: 16px;
     }
-    
+
     .list_item .text3 {
         font-size: 14px;
     }
-    
+
     .list_item .text4 {
         font-size: 14px;
     }
@@ -118,26 +139,30 @@
     /*베이직 리스트------------------------------*/
     .list_container {
         margin-bottom: 50px;
-        width: 97.7%; /*1004px*/
+        width: 97.7%;
+        /*1004px*/
         max-width: 1004px;
     }
 
     .list_item {
         margin-bottom: 40px;
-        width: 24.25298804780876%; /*243.5px*/
+        width: 24.25298804780876%;
+        /*243.5px*/
         max-width: 243.5px;
     }
 
     .list_item .text {
         margin-bottom: 6px;
-        line-height: 1.12; /* 행간 */
+        line-height: 1.12;
+        /* 행간 */
         margin-left: 10px;
         margin-right: 10px;
     }
 
     .list_item .text1 {
         font-size: 16px;
-        -webkit-text-stroke-width: 0.5px; /* 텍스트 외곽선*/
+        -webkit-text-stroke-width: 0.5px;
+        /* 텍스트 외곽선*/
         margin-top: 10px;
     }
 
@@ -168,12 +193,14 @@
     /*베이직 리스트------------------------------*/
     .list_container {
         margin-bottom: 40px;
-        width: 97%; /*747px*/
+        width: 97%;
+        /*747px*/
         max-width: 747px;
     }
 
     .list_item {
-        width: 32%; /*242.6666666666667px*/
+        width: 32%;
+        /*242.6666666666667px*/
         margin-bottom: 15px;
     }
 
@@ -184,8 +211,9 @@
     }
 
     .list_item .text1 {
-        font-size: 14px; 
-        -webkit-text-stroke-width: 0.4px; /* 텍스트 외곽선*/
+        font-size: 14px;
+        -webkit-text-stroke-width: 0.4px;
+        /* 텍스트 외곽선*/
         margin-top: 10px;
     }
 
@@ -218,12 +246,14 @@
     /*베이직 리스트------------------------------*/
     .list_container {
         margin-bottom: 10px;
-        width: 97%; /*470px*/
+        width: 97%;
+        /*470px*/
         max-width: 470px;
     }
 
     .list_item {
-        width: 49%; /*232.5px*/
+        width: 49%;
+        /*232.5px*/
         margin-bottom: 20px;
     }
 
@@ -233,8 +263,9 @@
     }
 
     .list_item .text1 {
-        font-size: 15px; 
-        -webkit-text-stroke-width: 0.4px; /* 텍스트 외곽선*/
+        font-size: 15px;
+        -webkit-text-stroke-width: 0.4px;
+        /* 텍스트 외곽선*/
         margin-top: 10px;
     }
 

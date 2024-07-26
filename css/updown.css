@@ -1,6 +1,6 @@
 /* 하트 만들기 참조 링크 - https://codingbroker.tistory.com/55 *? */
 .heart {
-    width: 348px;
+    width: 100%;
     height: 20px;
     position: absolute;
 }

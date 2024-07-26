@@ -1,6 +1,4 @@
-@charset utf-8;
-
-
+@charset "utf-8";
 
 /* 메인 배너 커서 손가락 표시 */
 #openModalPop {
@@ -10,20 +8,16 @@
 
 
 /* 팝업 오픈 시 배경 스크롤 방지 - 스크롤 시 메뉴바가 걸려서 포기 */
-/*
-html,
+/* html,
 body,
 #wrapper {
     height: 100%;
     overflow: auto;
 }
 
-html {
+body {
     overflow: hidden !important
-}
-    */
-
-
+} */
 
 /* 레이어창 배경 참고 링크 - https://bbo-blog.tistory.com/29 */
 #banner_online {
@@ -38,15 +32,15 @@ html {
     overflow: hidden;
 
 
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(20px);
     /*기본 브라우저*/
-    -webkit-backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(20px);
     /*사파리, 크롬(구글)*/
-    -ms-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(20px);
     /*ie9 익스플로러 용으로 보통 생략*/
-    -moz-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(20px);
     /*파이어 폭스*/
-    -o-backdrop-filter: blur(5px);
+    -o-backdrop-filter: blur(20px);
     /*오페라*/
 }
 
