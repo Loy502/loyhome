@@ -1,125 +1,157 @@
 @charset "utf-8";
+
 /* 데스크탑CSS----------------------------------------------------------------------------------------------------
 	1440-1281px (브라우저)
 	*/
-.work{
+.work {
 	width: 1024px;
 	padding-top: 40px;
 	padding-bottom: 20px;
 	padding-left: 0;
 	padding-right: 0;
-	letter-spacing :0.5px;
+	letter-spacing: 0.5px;
 	box-sizing: border-box;
 }
-.work li{
+
+.work li {
 	padding: 0 20px;
 	box-sizing: border-box;
 }
-.title{
+
+.title {
 	margin-bottom: 20px;
-	font-size: 1.25rem; /*20px*/
+	font-size: 1.25rem;
+	/*20px*/
 	line-height: 1.2;
-	-webkit-text-stroke-width: 0.7px; /* 텍스트 외곽선 */
+	-webkit-text-stroke-width: 0.7px;
+	/* 텍스트 외곽선 */
 	-webkit-text-stroke-color: #262626;
 }
-hr{
+
+hr {
 	border: none;
 	height: 0.5px;
 	margin: auto;
-	color: rgb(185, 185, 185); /* IE */
-	border-color: rgb(185, 185, 185) ; /* 사파리 */
-	background: rgb(185, 185, 185); /* 크롬, 모질라 등, 기타 브라우저 */
+	color: rgb(185, 185, 185);
+	/* IE */
+	border-color: rgb(185, 185, 185);
+	/* 사파리 */
+	background: rgb(185, 185, 185);
+	/* 크롬, 모질라 등, 기타 브라우저 */
 }
-.work li:nth-child(3){
+
+.work li:nth-child(3) {
 	margin-top: 20px;
 	margin-bottom: 10px;
-	-webkit-text-stroke-width: 0.5px; /* 텍스트 외곽선 */
+	-webkit-text-stroke-width: 0.5px;
+	/* 텍스트 외곽선 */
 	-webkit-text-stroke-color: #262626;
 }
-.history{
-	font-size: 1rem; /*16px*/
+
+.history {
+	font-size: 1rem;
+	/*16px*/
 	line-height: 1.3;
 }
-pre{
+
+pre {
 	word-wrap: break-word;
 }
 
+
+/* 아이패드 프로 --- 가로 너비 1366*/
+@media only screen and (orientation: landscape) {}
+
+
 /* 데스크탑/노트북CSS----------------------------------------------------------------------------------------------------
 	*/
-@media all and (max-width: 1280px){
-}
+@media all and (max-width: 1280px) {}
 
-   
+
 /* 태블릿CSS----------------------------------------------------------------------------------------------------
 	1024-768px (반응형)
 	*/
-@media all and (max-width: 1024px){
-	.work{
+@media all and (max-width: 1024px) {
+	.work {
 		width: 100%;
 		padding-top: 45px;
 		padding-bottom: 20px;
 	}
-	.work li{
+
+	.work li {
 		padding: 0 20px;
 	}
-}    
+}
 
 
 /* 태블릿/모바일_가로CSS----------------------------------------------------------------------------------------------------
 	767-481px (반응형)
 	*/
-	@media all and (max-width: 767px){
-		.work{
-			padding-top: 27px;
-			padding-bottom: 17px;
-			margin: 0;
-		}
-		.title{
-			font-size: 0.938rem; /*15px*/
-			margin-bottom: 15px;
-		} 
-		.history{
-			font-size: 0.813rem; /*13px*/
-		}
+@media all and (max-width: 767px) {
+	.work {
+		padding-top: 27px;
+		padding-bottom: 17px;
+		margin: 0;
 	}
+
+	.title {
+		font-size: 0.938rem;
+		/*15px*/
+		margin-bottom: 15px;
+	}
+
+	.history {
+		font-size: 0.813rem;
+		/*13px*/
+	}
+}
 
 
 /* 모바일CSS----------------------------------------------------------------------------------------------------
 	480-281px (반응형)
 	*/
-	@media all and (max-width: 480px){
-		.work{
-			padding-top: 10px;
-			padding-bottom: 10px;
-			margin: 5px 0;
-		}
-		.work li{
-			margin: 10px 0;
-			padding: 0 10px;
-		}
-		.title{
-			font-size: 0.813rem; /*13px*/
-			margin-bottom: 10px;
-		}
-		.work li:nth-child(3){
-			margin-top: 10px;
-			margin-bottom: 7px;
-		}
-		.history{
-			font-size: 0.75rem; /*12px*/
-			line-height: 1.2;
-		}
+@media all and (max-width: 480px) {
+	.work {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin: 5px 0;
 	}
+
+	.work li {
+		margin: 10px 0;
+		padding: 0 10px;
+	}
+
+	.title {
+		font-size: 0.813rem;
+		/*13px*/
+		margin-bottom: 10px;
+	}
+
+	.work li:nth-child(3) {
+		margin-top: 10px;
+		margin-bottom: 7px;
+	}
+
+	.history {
+		font-size: 0.75rem;
+		/*12px*/
+		line-height: 1.2;
+	}
+}
 
 
 /* 모바일CSS----------------------------------------------------------------------------------------------------
 	280px (min-withd 280px 고정)
 	*/
-	@media all and (max-width: 280px){
-		.work{
-			width: 280px;
-		}
-		.title, .history{
-			font-size: 0.75rem; /*12px*/
-		}
+@media all and (max-width: 280px) {
+	.work {
+		width: 280px;
 	}
+
+	.title,
+	.history {
+		font-size: 0.75rem;
+		/*12px*/
+	}
+}
